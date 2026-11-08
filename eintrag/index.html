@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arbeit eintragen — HausDex</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0B0D1A" />
+  <link rel="icon" type="image/png" href="/hausdex-icon.png" />
+  <link rel="canonical" href="https://hausdex.dexware.app/eintrag/index.html" />
+  <style>:root{--bg:#0B0D1A;--surface:#151829;--border:#272B47;--text:#EEF0FB;--muted:#9CA0BD;--accent:#818CF8;--window:#FBBF24;--link:#A5B4FC}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px 64px}
+header{padding:26px 0;display:flex;align-items:center;gap:12px}
+header img{width:38px;height:38px;border-radius:10px}
+.brand{font-size:18px;font-weight:800;letter-spacing:-.3px;color:var(--text);text-decoration:none}.brand b{color:var(--window)}
+a{color:var(--link)}
+h1{font-size:clamp(24px,5vw,30px);font-weight:800;letter-spacing:-.5px;margin:14px 0 6px}
+h2{font-size:18px;font-weight:700;margin:28px 0 8px}
+h3{font-size:15px;font-weight:700;margin:16px 0 6px}
+p{font-size:15px;margin-bottom:8px}
+ul{margin:8px 0 8px 22px}li{font-size:15px;margin-bottom:5px}
+.stand{color:var(--muted);font-size:13px;margin-bottom:6px}
+.note{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:12px;padding:14px 16px;margin:16px 0;font-size:14px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}th{color:var(--muted);font-weight:600}
+nav.legal{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-size:13px;color:var(--muted)}nav.legal a{margin-right:14px}
+@media (max-width:520px){table,thead,tbody,tr,th,td{display:block}thead{display:none}td{border:0;padding:2px 0}tr{border-bottom:1px solid var(--border);padding:8px 0}}label{display:block;font-size:14px;font-weight:600;margin:12px 0 4px}input,select,textarea{display:block;width:100%;margin-top:4px;background:var(--surface);border:1px solid var(--border);color:var(--text);border-radius:10px;padding:11px 12px;font-size:16px;font-family:inherit}
+.row{display:flex;gap:10px}.row label{flex:1}
+button{margin-top:18px;width:100%;background:#6366F1;color:#fff;border:0;border-radius:12px;padding:15px;font-size:17px;font-weight:800;cursor:pointer}button:disabled{opacity:.6}
+.hint{color:var(--muted);font-size:13px;margin-top:10px}.done{font-size:48px;color:#22C55E;font-weight:900}</style>
+</head>
+<body>
+<div class="wrap">
+  <header><img src="/hausdex-icon.png" alt="" width="38" height="38" /><a class="brand" href="/">Haus<b>Dex</b></a></header>
+  
+  <h1>Arbeit in die Hausakte eintragen</h1>
+  <p id="intro" class="stand">Einen Moment …</p>
+  <div id="err" class="note" style="display:none"></div>
+  <form id="f" style="display:none" autocomplete="on">
+    <label>Firma *<input name="company" required maxlength="140" autocomplete="organization" /></label>
+    <label>Ihr Name<input name="person" maxlength="120" autocomplete="name" /></label>
+    <label>Was wurde gemacht? *<input name="title" required maxlength="140" placeholder="z. B. Thermenwartung, Dachrinne erneuert" /></label>
+    <label>Art
+      <select name="kind">
+        <option value="maintenance">Wartung</option>
+        <option value="repair">Reparatur</option>
+        <option value="renewal">Erneuerung / Einbau</option>
+        <option value="inspection">Prüfung / Messung</option>
+        <option value="purchase">Lieferung / Kauf</option>
+      </select>
+    </label>
+    <div class="row">
+      <label>Datum<input name="date" type="date" /></label>
+      <label>Garantie bis<input name="warranty_until" type="date" /></label>
+    </div>
+    <div class="row">
+      <label>Betrag gesamt (brutto)<input name="cost_total" inputmode="decimal" placeholder="0,00" /></label>
+      <label>davon Arbeits-/Fahrtkosten<input name="cost_labor" inputmode="decimal" placeholder="0,00" /></label>
+    </div>
+    <label>Beschreibung, Messwerte, Empfehlungen<textarea name="description" rows="5" maxlength="4000"></textarea></label>
+    <label>Rechnung / Protokoll (Foto oder PDF, bis 3 Dateien)<input name="files" type="file" accept="image/*,application/pdf" multiple /></label>
+    <p class="hint">Die Eigentümerin bzw. der Eigentümer bestätigt Ihren Eintrag in der App. Sie sehen dabei nichts von der Hausakte. <a href="/datenschutz.html#6">Datenschutz</a></p>
+    <button type="submit" id="send">Eintragen</button>
+  </form>
+  <div id="ok" style="display:none">
+    <div class="done">✓</div>
+    <h2>Danke — eingetragen!</h2>
+    <p>Ihr Eintrag liegt jetzt in der Hausakte und wartet auf Bestätigung.</p>
+    <div class="note">Sie betreuen viele Haushalte? Mit <a href="https://installateurdex.dexware.app">InstallateurDex</a> landet jede Wartung automatisch in der Akte Ihrer Kundinnen und Kunden — samt Erinnerung an den nächsten Termin.</div>
+  </div>
+
+  <nav class="legal"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a><a href="/agb.html">AGB</a><a href="/konto-loeschung.html">Konto löschen</a></nav>
+</div>
+<script>
+(function(){
+  var URL_='https://zprgqaogagaxswdeiqsl.supabase.co', KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpwcmdxYW9nYWdheHN3ZGVpcXNsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQxNjM5MDYsImV4cCI6MjEwOTczOTkwNn0.MQzsQej3yARIzqnbbyrXKF84mn4VXRA3a-eqAA7TfVI';
+  var token=(location.hash.match(/t=([A-Za-z0-9_-]+)/)||[])[1]||'';
+  var $=function(id){return document.getElementById(id)};
+  function err(t){$('err').style.display='block';$('err').textContent=t;$('intro').textContent='';}
+  function rpc(fn,body){return fetch(URL_+'/rest/v1/rpc/'+fn,{method:'POST',headers:{'apikey':KEY,'Authorization':'Bearer '+KEY,'Content-Type':'application/json'},body:JSON.stringify(body)}).then(function(r){return r.json().then(function(j){if(!r.ok)throw new Error(j&&j.message||('HTTP '+r.status));return j;});});}
+  if(!token){err('Dieser Link ist unvollständig. Bitte den ganzen Link aus der Nachricht öffnen.');return;}
+  if(URL_.indexOf('http')!==0){err('Die Seite wird gerade eingerichtet. Bitte später erneut versuchen.');return;}
+  var today=new Date();today=today.getFullYear()+'-'+String(today.getMonth()+1).padStart(2,'0')+'-'+String(today.getDate()).padStart(2,'0');
+  document.querySelector('[name=date]').value=today;
+  rpc('craftsman_link_info',{p_token:token}).then(function(i){
+    if(!i.ok){err(i.reason==='used'?'Über diesen Link wurde bereits eingetragen. Danke!':i.reason==='expired'?'Dieser Link ist abgelaufen. Bitte um einen neuen Link.':'Dieser Link ist ungültig.');return;}
+    $('intro').textContent='Für: „'+i.house+'“ · ohne Anmeldung, dauert eine Minute.';
+    $('f').style.display='block';
+  }).catch(function(){err('Verbindung fehlgeschlagen. Bitte später erneut versuchen.');});
+  function num(v){v=(v||'').replace(/[€\s]/g,'');if(/,\d{1,2}$/.test(v))v=v.replace(/\./g,'').replace(',','.');else v=v.replace(/,/g,'');return v&&!isNaN(+v)?String(+v):'';}
+  function readFile(f){return new Promise(function(res,rej){if(f.size>1500000&&f.type==='application/pdf'){rej(new Error('PDF zu groß (max. 1,5 MB)'));return;}
+    if(f.type.indexOf('image/')===0){var img=new Image();var u=URL.createObjectURL(f);img.onload=function(){var s=Math.min(1,1600/Math.max(img.width,img.height));var c=document.createElement('canvas');c.width=Math.round(img.width*s);c.height=Math.round(img.height*s);c.getContext('2d').drawImage(img,0,0,c.width,c.height);URL.revokeObjectURL(u);res({name:f.name,data:c.toDataURL('image/jpeg',0.72)});};img.onerror=function(){rej(new Error('Bild nicht lesbar'));};img.src=u;return;}
+    var r=new FileReader();r.onload=function(){res({name:f.name,data:r.result});};r.onerror=function(){rej(new Error('Datei nicht lesbar'));};r.readAsDataURL(f);});}
+  $('f').addEventListener('submit',function(e){e.preventDefault();var fd=new FormData(e.target);var files=[].slice.call(e.target.files.files||[],0,3);
+    $('send').disabled=true;$('send').textContent='Wird gesendet …';
+    Promise.all(files.map(readFile)).then(function(list){
+      return rpc('craftsman_submit',{p_token:token,p:{company:fd.get('company'),person:fd.get('person'),title:fd.get('title'),kind:fd.get('kind'),date:fd.get('date'),warranty_until:fd.get('warranty_until'),cost_total:num(fd.get('cost_total')),cost_labor:num(fd.get('cost_labor')),description:fd.get('description'),files:list}});
+    }).then(function(){$('f').style.display='none';$('intro').textContent='';$('ok').style.display='block';window.scrollTo(0,0);})
+    .catch(function(x){$('send').disabled=false;$('send').textContent='Eintragen';alert('Das hat nicht geklappt: '+(x&&x.message||x));});
+  });
+})();
+</script>
+</body>
+</html>
