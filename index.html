@@ -319,6 +319,38 @@
     .eyebrow::before { content: counter(sec, decimal-leading-zero) '  /  '; white-space: pre; color: var(--muted); }
     h2 { font-weight: 560; letter-spacing: -.04em; font-size: clamp(29px, 3.9vw, 45px); line-height: 1.08; }
 
+    .show { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .show-points { margin-top: 24px; }
+    @media (max-width: 860px) { .show { grid-template-columns: 1fr; gap: 28px; } .show-visual { order: 2; } }
+    .hwflow { position: relative; display: flex; flex-direction: column; gap: 20px; max-width: 430px; margin: 0 auto; }
+    .hwflow::before { content: ''; position: absolute; left: 9px; top: 14px; bottom: 30px; width: 2px; background: linear-gradient(#818CF8, transparent); opacity: .45; }
+    .hw-step { position: relative; padding-left: 36px; }
+    .hw-step::before { content: ''; position: absolute; left: 2px; top: 2px; width: 16px; height: 16px; border-radius: 50%; background: #818CF8; box-shadow: 0 0 0 5px rgba(129,140,248,.18); }
+    .hw-who { display: block; font-size: 12.5px; color: var(--muted); margin-bottom: 7px; letter-spacing: .01em; }
+    .hw-box { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 16px; background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow); font-size: 14.5px; line-height: 1.45; }
+    .hw-bubble { border-top-left-radius: 4px; background: rgba(129,140,248,.12); border-color: rgba(129,140,248,.35); }
+    .hw-link { color: var(--accent-text); text-decoration: underline; text-underline-offset: 3px; }
+    .hw-meta { color: var(--muted); font-size: 13.5px; }
+    .hw-file { align-self: flex-start; margin-top: 6px; font-size: 10.5px; font-weight: 800; letter-spacing: .06em; padding: 3px 7px; border-radius: 6px; background: #E5484D; color: #fff; }
+    .hw-filename { margin-top: -22px; margin-left: 46px; font-size: 13px; color: var(--ink); }
+    .hw-btn { align-self: flex-end; margin-top: 8px; padding: 7px 14px; border-radius: 10px; background: #818CF8; color: #0B0D1A; font-weight: 700; font-size: 13.5px; }
+    .hw-seal { align-self: flex-start; margin-top: 6px; padding: 5px 10px; border-radius: 999px; background: rgba(48,164,108,.16); color: #4CC38A; font-weight: 700; font-size: 13px; }
+    .hw-step.s1 { animation: hw1 10s infinite both; } .hw-step.s2 { animation: hw2 10s infinite both; } .hw-step.s3 { animation: hw3 10s infinite both; }
+    .hw-seal { animation: hwSeal 10s infinite both; }
+    @keyframes hw1 { 0% { opacity: 0; transform: translateY(10px); } 6%, 90% { opacity: 1; transform: none; } 100% { opacity: 0; } }
+    @keyframes hw2 { 0%, 20% { opacity: 0; transform: translateY(10px); } 27%, 90% { opacity: 1; transform: none; } 100% { opacity: 0; } }
+    @keyframes hw3 { 0%, 42% { opacity: 0; transform: translateY(10px); } 49%, 90% { opacity: 1; transform: none; } 100% { opacity: 0; } }
+    @keyframes hwSeal { 0%, 56% { opacity: 0; transform: scale(.85); } 62%, 90% { opacity: 1; transform: none; } 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .hw-step, .hw-seal { animation: none !important; opacity: 1 !important; transform: none !important; } }
+    /* nur 2 Tarife (noSuite) + Handwerker-Block (partner) */
+    .plans.two { grid-template-columns: repeat(2, 1fr); max-width: 760px; margin-inline: auto; }
+    @media (max-width: 960px) { .plans.two { grid-template-columns: 1fr; max-width: 480px; } }
+    .partner { display: grid; grid-template-columns: auto 1fr auto; gap: 28px; align-items: center; padding: 32px; border-radius: 22px; background: var(--surface); border: 1px solid var(--border); }
+    .partner img { border-radius: 18px; }
+    .partner h2 { margin-top: 4px; }
+    .partner .btn { white-space: nowrap; }
+    @media (max-width: 760px) { .partner { grid-template-columns: 1fr; padding: 24px; gap: 18px; } }
+
     /* Handy-Wand + Lichter in der App-Farbe (Kopfbereich) */
     .hero.walled { isolation: isolate; min-height: min(780px, 100svh); display: flex; align-items: center;
       background:
@@ -403,7 +435,11 @@
 
     <section id="handwerker">
       <div class="wrap show">
-        <div class="show-visual rv">undefined</div>
+        <div class="show-visual rv"><div class="hwflow" role="img" aria-label="Ablauf: Du schickst deinem Handwerker einen Link, er trägt die Arbeit samt Rechnung ohne Konto ein, der Eintrag landet mit Siegel in deiner Akte.">
+          <div class="hw-step s1"><span class="hw-who">Du → Elektro Huber</span><div class="hw-box hw-bubble">Hallo Herr Huber, tragen Sie die Arbeit bitte hier ein:<br><span class="hw-link">hausdex.dexware.app/eintrag/…</span></div></div>
+          <div class="hw-step s2"><span class="hw-who">Elektro Huber · ohne Konto</span><div class="hw-box"><b>FI-Schutzschalter getauscht</b><span class="hw-meta">06.11.2026 · 312,80 € · davon Arbeit 180,00 €</span><span class="hw-file">PDF</span><span class="hw-filename">Rechnung-2026-118.pdf</span><span class="hw-btn">Eintragen</span></div></div>
+          <div class="hw-step s3"><span class="hw-who">Deine Akte</span><div class="hw-box hw-card"><b>FI-Schutzschalter getauscht</b><span class="hw-meta">Elektro Huber · 312,80 €</span><span class="hw-seal">✓ Siegel · vom Betrieb eingetragen</span></div></div>
+        </div></div>
         <div class="rv">
           <p class="eyebrow">Der Kreislauf</p>
           <h2>Dein Handwerker trägt selbst ein</h2>
@@ -417,7 +453,21 @@
       </div>
     </section>
 
-    
+    <section class="soft" id="pflicht">
+      <div class="wrap duty">
+        <div class="rv">
+          <p class="eyebrow">Warum es sich lohnt</p>
+          <h2>Jede Rechnung ist bares Geld wert</h2>
+          <p class="lead">Wer Belege und Termine im Griff hat, spart Steuern, verpasst keine Gewährleistung und verkauft besser. HausDex macht daraus zehn Sekunden pro Rechnung.</p>
+        </div>
+        <ul class="rules rv">
+          <li><span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12" /><path d="M4 14h9" /><path d="M19 6a7.7 7.7 0 0 0-5.2-2A7.9 7.9 0 0 0 6 12c0 4.4 3.5 8 7.8 8 2 0 3.8-.8 5.2-2" /></svg></span><span><b>Steuer (Deutschland)</b>20 % der Arbeitskosten von Handwerkern, bis zu 1.200 € Ermäßigung im Jahr (§ 35a EStG) — wenn Rechnung und Überweisung auffindbar sind.</span></li>
+          <li><span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><span><b>Gewährleistung</b>Am Bauwerk in Deutschland meist 5 Jahre (§ 634a BGB), in Österreich 3 Jahre (§ 933 ABGB). HausDex erinnert, bevor die Frist abläuft.</span></li>
+          <li><span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg></span><span><b>Hausverkauf, Bank, Erbe</b>Eine lückenlose Wartungs- und Rechnungshistorie beantwortet die Fragen von Käufern, Gutachtern und Bank, bevor sie gestellt werden.</span></li>
+          <li><span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" /><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" /></svg></span><span><b>Pflichttermine</b>Rauchmelder, Kaminkehrer, Heizungswartung — je nach Land verschieden, HausDex kennt die Termine für Deutschland, Österreich und die Schweiz.</span></li>
+        </ul>
+      </div>
+    </section>
 
     <section id="funktionen">
       <div class="wrap">
@@ -458,7 +508,7 @@
           <p class="eyebrow">Preise</p>
           <h2>Kostenlos starten, bei Bedarf upgraden.</h2>
         </div>
-        <div class="plans">
+        <div class="plans two">
           <div class="plan rv">
             <h3>Free</h3>
             <p class="price">0 €</p>
@@ -472,17 +522,7 @@
             <p class="per">oder 39,99 € im Jahr</p>
             <ul><li><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Unbegrenzt Objekte, Einträge und Belege</li><li><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>40 KI-Auslesen pro Monat</li><li><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Hauspass-PDF</li><li><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Steuer-Export (DE § 35a)</li><li><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Haushalt mit Familie teilen</li></ul>
           </div>
-          <div class="plan suite rv">
-            <h3>Dexware Suite</h3>
-            <p class="price">39,99 € <small>/ Monat</small></p>
-            <p class="per">oder 319,99 € im Jahr · entspricht 26,67 € im Monat</p>
-            <ul>
-              <li><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Alle 15 Dexware-Apps freigeschaltet</li>
-              <li><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Neue Apps automatisch dabei</li>
-              <li><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Ein Abo für alle Geräte</li>
-            </ul>
-            <div class="icons" aria-hidden="true"><img src="assets/apps/gurtdex.webp" alt="" width="26" height="26" loading="lazy" /><img src="assets/apps/toredex.webp" alt="" width="26" height="26" loading="lazy" /><img src="assets/apps/geruestdex.webp" alt="" width="26" height="26" loading="lazy" /><img src="assets/apps/feuerdex.webp" alt="" width="26" height="26" loading="lazy" /><img src="assets/apps/leiterdex.webp" alt="" width="26" height="26" loading="lazy" /><img src="assets/apps/regaldex.webp" alt="" width="26" height="26" loading="lazy" /><img src="assets/apps/spieldex.webp" alt="" width="26" height="26" loading="lazy" /><img src="assets/apps/winterdex.webp" alt="" width="26" height="26" loading="lazy" /><img src="assets/apps/kfzdex.webp" alt="" width="26" height="26" loading="lazy" /><img src="assets/apps/pruefdex.webp" alt="" width="26" height="26" loading="lazy" /><img src="assets/apps/schutzdex.webp" alt="" width="26" height="26" loading="lazy" /><img src="assets/apps/baumdex.webp" alt="" width="26" height="26" loading="lazy" /><img src="assets/apps/tourdex.webp" alt="" width="26" height="26" loading="lazy" /><img src="assets/apps/craftdex.webp" alt="" width="26" height="26" loading="lazy" /><img src="assets/apps/dokudex.webp" alt="" width="26" height="26" loading="lazy" /><img src="assets/apps/hausdex.webp" alt="" width="26" height="26" loading="lazy" /></div>
-          </div>
+          
         </div>
         
         <p class="fine">Abschluss direkt in der App über Google Play · jederzeit kündbar · Preise inkl. MwSt.</p>
@@ -508,33 +548,16 @@
       </div>
     </section>
 
-    <section id="dexware">
+    <section id="handwerk">
       <div class="wrap">
-        <div class="family-row rv">
+        <div class="partner rv">
+          <img src="assets/apps/installateurdex.webp" alt="" width="72" height="72" loading="lazy" />
           <div>
-            <p class="eyebrow">Teil von Dexware</p>
-            <h2>Eine App pro Pflicht.</h2>
-            <p class="lead">HausDex gehört zu Dexware — schlanke Apps für Prüfung und Dokumentation im Betrieb.</p>
+            <p class="eyebrow">Für Handwerker</p>
+            <h2>Du bist Installateur oder Heizungsbauer?</h2>
+            <p class="lead">Mit InstallateurDex diktierst du Wartungen, schreibst Rechnungen und gibst jedem Kunden einen QR-Anlagenpass. Nutzt dein Kunde HausDex, landet jede Arbeit automatisch in seiner Hausakte — mit deinem Namen, wenn wieder etwas anfällt.</p>
           </div>
-          <a href="https://dexware.app/" class="btn ghost sm">Alle Apps ansehen <svg class="i sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
-        </div>
-        <div class="family rv">
-          <a href="https://hebedex.dexware.app"><img src="assets/apps/hebedex.webp" alt="" width="44" height="44" loading="lazy" /><b>HebeDex</b><small>Anschlag- & Zurrmittel · bald</small></a>
-          <a href="https://gurtdex.dexware.app"><img src="assets/apps/gurtdex.webp" alt="" width="44" height="44" loading="lazy" /><b>GurtDex</b><small>PSA gegen Absturz</small></a>
-          <a href="https://toredex.dexware.app"><img src="assets/apps/toredex.webp" alt="" width="44" height="44" loading="lazy" /><b>ToreDex</b><small>Tore & Türen</small></a>
-          <a href="https://geruestdex.dexware.app"><img src="assets/apps/geruestdex.webp" alt="" width="44" height="44" loading="lazy" /><b>GerüstDex</b><small>Gerüstprüfung</small></a>
-          <a href="https://feuerdex.dexware.app"><img src="assets/apps/feuerdex.webp" alt="" width="44" height="44" loading="lazy" /><b>FeuerDex</b><small>Feuerlöscher</small></a>
-          <a href="https://leiterdex.dexware.app"><img src="assets/apps/leiterdex.webp" alt="" width="44" height="44" loading="lazy" /><b>LeiterDex</b><small>Leitern & Tritte</small></a>
-          <a href="https://regaldex.dexware.app"><img src="assets/apps/regaldex.webp" alt="" width="44" height="44" loading="lazy" /><b>RegalDex</b><small>Regalinspektion</small></a>
-          <a href="https://spieldex.dexware.app"><img src="assets/apps/spieldex.webp" alt="" width="44" height="44" loading="lazy" /><b>SpielDex</b><small>Spielplatzkontrolle</small></a>
-          <a href="https://winterdex.dexware.app"><img src="assets/apps/winterdex.webp" alt="" width="44" height="44" loading="lazy" /><b>WinterDex</b><small>Winterdienst</small></a>
-          <a href="https://kfzdex.dexware.app"><img src="assets/apps/kfzdex.webp" alt="" width="44" height="44" loading="lazy" /><b>KfzDex</b><small>Fuhrpark & UVV</small></a>
-          <a href="https://pruefdex.dexware.app"><img src="assets/apps/pruefdex.webp" alt="" width="44" height="44" loading="lazy" /><b>PrüfDex</b><small>DGUV V3</small></a>
-          <a href="https://schutzdex.dexware.app"><img src="assets/apps/schutzdex.webp" alt="" width="44" height="44" loading="lazy" /><b>SchutzDex</b><small>Unterweisungen</small></a>
-          <a href="https://baumdex.dexware.app"><img src="assets/apps/baumdex.webp" alt="" width="44" height="44" loading="lazy" /><b>BaumDex</b><small>Baumkataster</small></a>
-          <a href="https://tourdex.dexware.app"><img src="assets/apps/tourdex.webp" alt="" width="44" height="44" loading="lazy" /><b>TourDex</b><small>Fahrtenbuch</small></a>
-          <a href="https://craftdex.dexware.app"><img src="assets/apps/craftdex.webp" alt="" width="44" height="44" loading="lazy" /><b>CraftDex</b><small>Projekt-Doku</small></a>
-          <a href="https://dokudex.dexware.app"><img src="assets/apps/dokudex.webp" alt="" width="44" height="44" loading="lazy" /><b>DokuDex</b><small>Dokumente & KI</small></a>
+          <a href="https://installateurdex.dexware.app" class="btn">InstallateurDex ansehen <svg class="i sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
         </div>
       </div>
     </section>
