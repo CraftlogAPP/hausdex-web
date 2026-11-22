@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HausDex — Hausakte &amp; Wartung: das Scheckheft fürs Haus</title>
-  <meta name="description" content="HausDex: Rechnungen per KI ablegen, Wartungen und Garantien im Blick, Handwerker tragen selbst ein, Hauspass als PDF. Für Haus- und Wohnungseigentümer in DE, AT und CH." />
+  <title>Digitale Hausakte: Wartung, Rechnungen, Garantien – HausDex</title>
+  <meta name="description" content="Digitale Hausakte: Rechnungen per KI ablegen, Wartung und Garantie mit Erinnerung, Handwerker tragen selbst ein. Gratis: 1 Objekt, 25 Einträge." />
   <meta name="theme-color" content="#0B0D1A" />
   <!-- seo:start -->
   <link rel="icon" type="image/png" href="/hausdex-icon.png" />
@@ -12,401 +12,23 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="HausDex" />
   <meta property="og:locale" content="de_DE" />
-  <meta property="og:title" content="HausDex — Das Scheckheft fürs Haus" />
-  <meta property="og:description" content="Rechnungen per KI ablegen, Wartungen und Garantien im Blick, Handwerker tragen selbst ein, Hauspass als PDF — für Haus- und Wohnungseigentümer." />
+  <meta property="og:title" content="Digitale Hausakte: Wartung, Rechnungen, Garantien – HausDex" />
+  <meta property="og:description" content="Digitale Hausakte: Rechnungen per KI ablegen, Wartung und Garantie mit Erinnerung, Handwerker tragen selbst ein. Gratis: 1 Objekt, 25 Einträge." />
   <meta property="og:url" content="https://hausdex.dexware.app/" />
   <meta property="og:image" content="https://hausdex.dexware.app/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="HausDex — Das Scheckheft fürs Haus" />
-  <meta name="twitter:description" content="Rechnungen per KI ablegen, Wartungen und Garantien im Blick, Handwerker tragen selbst ein, Hauspass als PDF — für Haus- und Wohnungseigentümer." />
+  <meta name="twitter:title" content="Digitale Hausakte: Wartung, Rechnungen, Garantien – HausDex" />
+  <meta name="twitter:description" content="Digitale Hausakte: Rechnungen per KI ablegen, Wartung und Garantie mit Erinnerung, Handwerker tragen selbst ein. Gratis: 1 Objekt, 25 Einträge." />
   <meta name="twitter:image" content="https://hausdex.dexware.app/og-image.png" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","@id":"https://hausdex.dexware.app/#app","name":"HausDex","url":"https://hausdex.dexware.app/","description":"HausDex: Rechnungen per KI ablegen, Wartungen und Garantien im Blick, Handwerker tragen selbst ein, Hauspass als PDF. Für Haus- und Wohnungseigentümer in DE, AT und CH.","operatingSystem":"Android","applicationCategory":"LifestyleApplication","inLanguage":"de","image":"https://hausdex.dexware.app/og-image.png","screenshot":["https://hausdex.dexware.app/assets/shots/hero-1.webp","https://hausdex.dexware.app/assets/shots/hero-2.webp"],"offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"EUR","description":"Kostenlos starten, Pro-Abo in der App"},{"@type":"Offer","name":"HausDex Pro (monatlich)","price":"4.99","priceCurrency":"EUR","priceSpecification":{"@type":"UnitPriceSpecification","price":"4.99","priceCurrency":"EUR","billingDuration":"P1M"}},{"@type":"Offer","name":"HausDex Pro (jährlich)","price":"39.99","priceCurrency":"EUR","priceSpecification":{"@type":"UnitPriceSpecification","price":"39.99","priceCurrency":"EUR","billingDuration":"P1Y"}}],"publisher":{"@type":"Organization","@id":"https://dexware.app/#organization","name":"Dexware","url":"https://dexware.app/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","@id":"https://hausdex.dexware.app/#app","name":"HausDex","url":"https://hausdex.dexware.app/","description":"Digitale Hausakte: Rechnungen per KI ablegen, Wartung und Garantie mit Erinnerung, Handwerker tragen selbst ein. Gratis: 1 Objekt, 25 Einträge.","operatingSystem":"Android","applicationCategory":"LifestyleApplication","inLanguage":"de","image":"https://hausdex.dexware.app/og-image.png","screenshot":["https://hausdex.dexware.app/assets/shots/hero-1.webp","https://hausdex.dexware.app/assets/shots/hero-2.webp"],"offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"EUR","description":"Kostenlos starten, Pro-Abo in der App"},{"@type":"Offer","name":"HausDex Pro (monatlich)","price":"4.99","priceCurrency":"EUR","priceSpecification":{"@type":"UnitPriceSpecification","price":"4.99","priceCurrency":"EUR","billingDuration":"P1M"}},{"@type":"Offer","name":"HausDex Pro (jährlich)","price":"39.99","priceCurrency":"EUR","priceSpecification":{"@type":"UnitPriceSpecification","price":"39.99","priceCurrency":"EUR","billingDuration":"P1Y"}}],"publisher":{"@type":"Organization","@id":"https://dexware.app/#organization","name":"Dexware","url":"https://dexware.app/"}}</script>
   <!-- seo:end -->
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Brauche ich ein Konto?","acceptedAnswer":{"@type":"Answer","text":"Nein, zum Ausprobieren nicht: „Ohne Konto ausprobieren“ speichert alles nur auf dem Handy. Mit Konto werden deine Daten gesichert, zwischen Geräten abgeglichen und mit der Familie geteilt (Teilen mit Pro). Die Daten aus dem Ausprobieren übernimmst du dabei."}},{"@type":"Question","name":"Was sieht der Handwerker über den Link?","acceptedAnswer":{"@type":"Answer","text":"Nur den Namen deines Objekts und ein Formular für seine Arbeit. Deine Akte, andere Einträge oder Belege sieht er nicht. Der Link gilt 7 Tage und für einen einzigen Eintrag."}},{"@type":"Question","name":"Wie funktioniert die KI-Auslese?","acceptedAnswer":{"@type":"Answer","text":"Du fotografierst eine Rechnung oder wählst ein PDF. Die Datei geht verschlüsselt an unseren Server und von dort zur Auslese an Anthropic (USA); gespeichert wird sie dort nicht, nur das Ergebnis kommt zurück. Details in der Datenschutzerklärung."}},{"@type":"Question","name":"Ersetzt HausDex den Steuerberater?","acceptedAnswer":{"@type":"Answer","text":"Nein. Der Steuer-Helfer fasst deine Rechnungen zusammen und rechnet die Ermäßigung nach § 35a EStG überschlägig — eine Hilfe für die Steuererklärung, keine Beratung."}},{"@type":"Question","name":"Funktioniert HausDex ohne Netz?","acceptedAnswer":{"@type":"Answer","text":"Ja. Alles liegt auch auf dem Handy und wird abgeglichen, sobald wieder Netz da ist — praktisch im Keller oder auf dem Dachboden."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Brauche ich ein Konto?","acceptedAnswer":{"@type":"Answer","text":"Nein, zum Ausprobieren nicht: „Ohne Konto ausprobieren“ speichert alles nur auf dem Handy. Mit Konto werden deine Daten gesichert, zwischen Geräten abgeglichen und mit der Familie geteilt (Teilen mit Pro). Die Daten aus dem Ausprobieren übernimmst du dabei. KI-Auslese und Handwerker-Link brauchen ein Konto, ohne Konto siehst du eine Beispiel-Auslese."}},{"@type":"Question","name":"Was sieht der Handwerker über den Link?","acceptedAnswer":{"@type":"Answer","text":"Nur den Namen deines Objekts und ein Formular für seine Arbeit. Deine Akte, andere Einträge oder Belege sieht er nicht. Der Link gilt 7 Tage und für einen einzigen Eintrag."}},{"@type":"Question","name":"Wie funktioniert die KI-Auslese?","acceptedAnswer":{"@type":"Answer","text":"Du fotografierst eine Rechnung oder wählst ein PDF. Die Datei geht verschlüsselt an unseren Server und von dort zur Auslese an Anthropic (USA); gespeichert wird sie dort nicht, nur das Ergebnis kommt zurück. Details in der Datenschutzerklärung."}},{"@type":"Question","name":"Ersetzt HausDex den Steuerberater?","acceptedAnswer":{"@type":"Answer","text":"Nein. Der Steuer-Helfer fasst deine Rechnungen zusammen und rechnet die Ermäßigung nach § 35a EStG überschlägig — eine Hilfe für die Steuererklärung, keine Beratung."}},{"@type":"Question","name":"Funktioniert HausDex ohne Netz?","acceptedAnswer":{"@type":"Answer","text":"Ja. Alles liegt auch auf dem Handy und wird abgeglichen, sobald wieder Netz da ist — praktisch im Keller oder auf dem Dachboden."}}]}</script>
   <link rel="preload" href="assets/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
   <style>
-    @font-face { font-family: 'Inter'; src: url('assets/inter-latin-var.woff2') format('woff2');
-      font-weight: 100 900; font-style: normal; font-display: swap; }
-    :root {
-      --accent: #818CF8;
-      --on-accent: #fff;
-      --radius: 16px;
-      --wrap: 1120px;
-    }
-    html.light {
-      --bg: #ffffff;
-      --bg-soft: color-mix(in oklab, #f7f7f9 96%, var(--accent));
-      --surface: #ffffff;
-      --border: color-mix(in oklab, #e7e7eb 94%, var(--accent));
-      --ink: #0d0d12;
-      --muted: #5c5c69;
-      --accent-text: color-mix(in oklab, var(--accent) 82%, #000);
-      --accent-soft: color-mix(in oklab, var(--accent) 10%, #fff);
-      --card: var(--surface);
-      --shadow: 0 1px 2px rgba(16,16,24,.04), 0 8px 24px -12px rgba(16,16,24,.12);
-      color-scheme: light;
-    }
-    html.dark {
-      --bg: #0B0D1A;
-      --bg-soft: color-mix(in oklab, #0B0D1A 96%, #fff);
-      --surface: color-mix(in oklab, #0B0D1A 93%, #fff);
-      --card: linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.02));
-      --border: rgba(255,255,255,.085);
-      --ink: #f6f5f7;
-      --muted: #aaa4ad;
-      --accent-text: color-mix(in oklab, var(--accent) 70%, #fff);
-      --accent-soft: color-mix(in oklab, var(--accent) 18%, transparent);
-      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 12px 32px -16px rgba(0,0,0,.6);
-      color-scheme: dark;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; scroll-padding-top: 80px; -webkit-text-size-adjust: 100%; }
-    body { background: var(--bg); color: var(--ink);
-      font: 400 16px/1.6 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-      font-feature-settings: 'cv11', 'ss01'; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-    a { color: var(--accent-text); text-decoration: none; }
-    a:hover { text-decoration: underline; text-underline-offset: 3px; }
-    :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
-    img { max-width: 100%; }
-    .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
-    @media (max-width: 600px) { .wrap { padding: 0 16px; } }
-    .i { width: 20px; height: 20px; flex: none; }
-
-    /* Kopfzeile */
-    .top { position: sticky; top: 0; z-index: 40; background: color-mix(in oklab, var(--bg) 82%, transparent);
-      -webkit-backdrop-filter: saturate(1.4) blur(14px); backdrop-filter: saturate(1.4) blur(14px);
-      border-bottom: 1px solid transparent; transition: border-color .2s; }
-    .top.scrolled { border-bottom-color: var(--border); }
-    .top .wrap { display: flex; align-items: center; gap: 28px; height: 64px; }
-    .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 650; font-size: 17px; letter-spacing: -.01em; }
-    .brand:hover { text-decoration: none; }
-    /* Feiner heller Rand wie auf dem Hub: dunkle Symbole (TourDex, GurtDex, HebeDex, KfzDex) verschwinden sonst im dunklen Hintergrund. */
-    .brand img { width: 32px; height: 32px; border-radius: 8px; box-shadow: 0 0 0 1px rgba(255,255,255,.16); }
-    .brand .wm span { color: var(--accent-text); }
-    .top nav { display: flex; gap: 24px; margin-left: auto; }
-    .top nav a { color: var(--muted); font-size: 14.5px; font-weight: 500; }
-    .top nav a:hover { color: var(--ink); text-decoration: none; }
-    @media (max-width: 760px) { .top nav { display: none; } .top .btn { margin-left: auto; } }
-
-    /* Knöpfe */
-    .btn { display: inline-flex; align-items: center; gap: 8px; height: 48px; padding: 0 22px; border-radius: 12px;
-      font-weight: 600; font-size: 15.5px; background: var(--accent); color: var(--on-accent);
-      box-shadow: 0 1px 0 rgba(255,255,255,.18) inset, 0 6px 20px -8px color-mix(in oklab, var(--accent) 70%, transparent);
-      transition: transform .15s, box-shadow .15s, background .15s; }
-    .btn:hover { text-decoration: none; transform: translateY(-1px);
-      box-shadow: 0 1px 0 rgba(255,255,255,.18) inset, 0 10px 26px -8px color-mix(in oklab, var(--accent) 80%, transparent); }
-    .btn.sm { height: 38px; padding: 0 16px; font-size: 14px; border-radius: 10px; }
-    .btn.ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--border); }
-    .btn.ghost:hover { background: var(--bg-soft); }
-    .btn .play { width: 14px; height: 14px; fill: currentColor; stroke: none; }
-    .btn .i { width: 16px; height: 16px; }
-
-    /* Hero */
-    .hero { position: relative; overflow: hidden; }
-    .hero::before { content: ''; position: absolute; inset: -20% -10% auto 40%; height: 120%; z-index: -1; pointer-events: none;
-      background: radial-gradient(closest-side, color-mix(in oklab, var(--accent) 22%, transparent), transparent 75%); }
-    .hero .wrap { display: grid; grid-template-columns: 1.15fr .85fr; gap: 40px; align-items: center; padding-top: 56px; padding-bottom: 40px; }
-    .kicker { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: var(--accent-text);
-      background: var(--accent-soft); padding: 6px 12px; border-radius: 999px; margin-bottom: 22px; }
-    h1 { font-size: clamp(34px, 4.6vw, 54px); line-height: 1.05; font-weight: 750; letter-spacing: -.035em; }
-    h1 em { font-style: normal; color: var(--accent-text); }
-    .sub { margin-top: 20px; font-size: 18px; line-height: 1.6; color: var(--muted); max-width: 520px; }
-    .sub strong { color: var(--ink); font-weight: 600; }
-    .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
-    .hint { margin-top: 12px; font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
-    .hint .i { width: 15px; height: 15px; }
-    .ticks { display: flex; flex-wrap: wrap; gap: 10px 20px; margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--border); }
-    .ticks li { list-style: none; display: flex; align-items: center; gap: 8px; font-size: 14.5px; font-weight: 500; }
-    .ticks .i { width: 17px; height: 17px; color: var(--accent-text); }
-    .shots { position: relative; height: 560px; }
-    .shots .phone { position: absolute; }
-    .shots .phone.a { left: 4%; top: 0; z-index: 2; }
-    .shots .phone.b { right: 0; top: 64px; transform: scale(.9); transform-origin: top right; opacity: .96; }
-    @media (max-width: 900px) {
-      .hero .wrap { grid-template-columns: 1fr; gap: 36px; padding-top: 36px; }
-      .shots { height: 380px; max-width: 420px; width: 100%; margin: 0 auto;
-        -webkit-mask-image: linear-gradient(#000 70%, transparent); mask-image: linear-gradient(#000 70%, transparent); }
-      .shots .phone { --pw: 210px; }
-      .shots .phone.a { left: 2%; } .shots .phone.b { top: 40px; }
-    }
-
-    /* Handyrahmen */
-    .phone { --pw: 262px; width: var(--pw); padding: 8px; border-radius: calc(var(--pw) * .16);
-      background: linear-gradient(160deg, #2b2b31, #0e0e11 40%);
-      box-shadow: 0 0 0 1px rgba(255,255,255,.06) inset, 0 0 0 1px rgba(0,0,0,.5), 0 40px 70px -30px rgba(10,10,20,.55), 0 18px 30px -18px rgba(10,10,20,.35); }
-    .screen { position: relative; border-radius: calc(var(--pw) * .13); overflow: hidden; background: var(--bar); padding-top: calc(var(--pw) * .1); }
-    .screen::before { content: ''; position: absolute; top: calc(var(--pw) * .03); left: 50%; transform: translateX(-50%);
-      width: 30%; height: calc(var(--pw) * .075); border-radius: 99px; background: #000; }
-    .screen img { display: block; width: 100%; height: auto; }
-
-    /* Abschnitte */
-    section { padding: 80px 0; }
-    section.soft { background: var(--bg-soft); }
-    @media (max-width: 700px) {
-      section { padding: 52px 0; }
-      .head { margin-bottom: 24px; }
-      .lead { font-size: 16px; }
-      .sub { font-size: 16.5px; }
-      .cta .btn { flex: 1 1 100%; justify-content: center; }
-      .ticks { gap: 8px 16px; }
-      .rules li { padding: 14px 16px; grid-template-columns: 32px 1fr; gap: 12px; font-size: 14.5px; }
-      .rules .ic { width: 32px; height: 32px; }
-    }
-    .eyebrow { font-size: 13px; font-weight: 600; letter-spacing: .02em; color: var(--accent-text); margin-bottom: 10px; }
-    h2 { font-size: clamp(27px, 3.4vw, 38px); line-height: 1.12; font-weight: 720; letter-spacing: -.03em; max-width: 760px; }
-    .lead { margin-top: 14px; font-size: 17px; color: var(--muted); max-width: 620px; }
-    .lead strong { color: var(--ink); font-weight: 600; }
-    .head { margin-bottom: 40px; }
-
-    /* Pflicht */
-    .duty { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: start; }
-    .rules { list-style: none; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
-    .rules li { display: grid; grid-template-columns: 36px 1fr; gap: 14px; padding: 18px 22px; border-top: 1px solid var(--border); font-size: 15px; color: var(--muted); }
-    .rules li:first-child { border-top: 0; }
-    .rules b { display: block; color: var(--ink); font-weight: 600; font-size: 15.5px; margin-bottom: 1px; }
-    .ic { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent-text); }
-    @media (max-width: 860px) { .duty { grid-template-columns: 1fr; gap: 28px; } }
-
-    /* Funktionen */
-    .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-    .feature { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); }
-    .feature .ic { margin-bottom: 16px; }
-    .feature h3 { font-size: 16.5px; font-weight: 640; letter-spacing: -.01em; margin-bottom: 6px; }
-    .feature p { font-size: 15px; color: var(--muted); line-height: 1.55; }
-    @media (max-width: 900px) { .features { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 600px) { .features { grid-template-columns: 1fr; gap: 10px; }
-      .feature { padding: 16px; display: grid; grid-template-columns: 36px 1fr; gap: 0 14px; }
-      .feature .ic { margin: 0; grid-row: span 2; } .feature p { font-size: 14.5px; } }
-
-    /* Ablauf */
-    .flow { display: grid; grid-template-columns: 1fr auto; gap: 72px; align-items: center; }
-    .steps { list-style: none; counter-reset: s; margin-top: 32px; }
-    .steps li { counter-increment: s; position: relative; padding: 0 0 26px 56px; }
-    .steps li:last-child { padding-bottom: 0; }
-    .steps li::before { content: counter(s); position: absolute; left: 0; top: -2px; width: 36px; height: 36px; border-radius: 50%;
-      display: grid; place-items: center; font-weight: 650; font-size: 15px; background: var(--accent); color: var(--on-accent); }
-    .steps li:not(:last-child)::after { content: ''; position: absolute; left: 17.5px; top: 40px; bottom: 6px; width: 1px; background: var(--border); }
-    .steps b { display: block; font-size: 17px; font-weight: 640; margin-bottom: 4px; }
-    .steps p { color: var(--muted); font-size: 15.5px; }
-    .flow .phone { --pw: 280px; }
-    @media (max-width: 860px) { .flow { grid-template-columns: 1fr; } .flow > div:last-child { display: none; } .steps { margin-top: 24px; } }
-
-    /* Preise */
-    .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: stretch; }
-    .plan { position: relative; display: flex; flex-direction: column; min-width: 0; background: var(--card); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); }
-    .plan.pro { border-color: color-mix(in oklab, var(--accent) 55%, var(--border)); box-shadow: 0 0 0 1px color-mix(in oklab, var(--accent) 55%, transparent), var(--shadow); }
-    .plan .badge { position: absolute; top: -11px; left: 28px; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 99px; background: var(--accent); color: var(--on-accent); }
-    .plan h3 { font-size: 15px; font-weight: 600; color: var(--muted); }
-    .price { margin-top: 10px; font-size: 38px; font-weight: 720; letter-spacing: -.03em; line-height: 1.1; }
-    .price small { font-size: 15px; font-weight: 500; color: var(--muted); letter-spacing: 0; }
-    .per { font-size: 14px; color: var(--muted); margin-top: 4px; min-height: 22px; }
-    .plan ul { list-style: none; margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--border); display: grid; gap: 10px; }
-    .plan li { display: flex; gap: 10px; font-size: 15px; }
-    .plan li .i { width: 18px; height: 18px; margin-top: 2px; color: var(--accent-text); }
-    .plan.suite { color: #f4f4f6; border: 1px solid transparent;
-      background: linear-gradient(180deg, #121218, #0b0b0f) padding-box, linear-gradient(140deg, #3b82f6, #8b5cf6 55%, var(--accent)) border-box; }
-    .plan.suite h3, .plan.suite .per, .plan.suite .price small { color: #a3a3ad; }
-    .plan.suite ul { border-color: rgba(255,255,255,.1); }
-    .plan.suite li .i { color: #f4f4f6; }
-    .icons { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 22px; }
-    .icons img { width: 26px; height: 26px; border-radius: 7px; }
-    .fine { margin-top: 20px; font-size: 13.5px; color: var(--muted); }
-    .trust { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 10px 26px; font-size: 14px; color: var(--muted); }
-    .trust li { display: flex; align-items: center; gap: 8px; }
-    .trust .i { width: 18px; height: 18px; flex: none; color: var(--accent-text); }
-    .trust a { color: inherit; }
-    @media (max-width: 960px) { .plans { grid-template-columns: 1fr; max-width: 480px; } }
-
-    /* FAQ */
-    .faq { display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; align-items: start; }
-    .faq details { border-bottom: 1px solid var(--border); }
-    .faq details:first-child { border-top: 1px solid var(--border); }
-    .faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 16px; align-items: center;
-      padding: 18px 2px; font-weight: 600; font-size: 16px; }
-    .faq summary::-webkit-details-marker { display: none; }
-    .faq summary .i { color: var(--muted); transition: transform .2s; }
-    .faq details[open] summary .i { transform: rotate(180deg); }
-    .faq .a { padding: 0 2px 20px; color: var(--muted); font-size: 15.5px; max-width: 640px; }
-    .ask { margin-top: 18px; color: var(--muted); font-size: 15px; display: flex; align-items: center; gap: 8px; }
-    @media (max-width: 860px) { .faq { grid-template-columns: 1fr; gap: 24px; } }
-
-    /* Familie */
-    .family { display: grid; grid-template-columns: repeat(8, 1fr); gap: 8px; margin-top: 32px; }
-    .family a { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 16px 6px 14px; border-radius: 14px;
-      color: var(--ink); text-align: center; transition: background .15s; }
-    .family a:hover { background: var(--surface); text-decoration: none; box-shadow: var(--shadow); }
-    .family a[aria-disabled] { cursor: default; opacity: .75; } .family a[aria-disabled]:hover { background: none; box-shadow: none; }
-    .family img { width: 44px; height: 44px; border-radius: 11px; box-shadow: 0 0 0 1px rgba(255,255,255,.16); }
-    .family b { font-size: 13.5px; font-weight: 600; line-height: 1.2; }
-    .family small { font-size: 12px; color: var(--muted); line-height: 1.3; }
-    .family-row { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; }
-    @media (max-width: 900px) { .family { grid-template-columns: repeat(4, 1fr); } }
-    @media (max-width: 480px) { .family { grid-template-columns: repeat(4, 1fr); gap: 2px; margin-top: 20px; } .family a { padding: 10px 2px; gap: 6px; }
-      .family img { width: 40px; height: 40px; } .family b { font-size: 11.5px; } .family small { display: none; } }
-
-    /* Prüfpunkte (optional) */
-    .points { margin-top: 16px; padding: 22px 24px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); }
-    .points p { font-size: 15px; color: var(--muted); margin-bottom: 14px; }
-    .points p b { color: var(--ink); font-weight: 600; margin-right: 4px; }
-    .points ol { list-style: none; counter-reset: p; display: flex; flex-wrap: wrap; gap: 8px; }
-    .points li { counter-increment: p; display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500;
-      padding: 5px 12px 5px 5px; border-radius: 99px; background: var(--bg-soft); border: 1px solid var(--border); }
-    .points li::before { content: counter(p); width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center;
-      font-size: 12px; font-weight: 650; background: var(--accent-soft); color: var(--accent-text); }
-    .points.plain li { padding: 5px 12px; }
-    .points.plain li::before { display: none; }
-    @media (max-width: 600px) { .points { padding: 16px; } .points li { font-size: 13px; } }
-
-    /* Fußzeile */
-    footer { border-top: 1px solid var(--border); padding: 32px 0 40px; font-size: 14px; color: var(--muted); }
-    footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between; }
-    footer nav { display: flex; flex-wrap: wrap; gap: 8px 22px; }
-    footer .note { display: block; font-size: 13px; line-height: 1.55; margin-bottom: 20px; max-width: var(--wrap); }
-    footer a { color: var(--muted); }
-    footer a:hover { color: var(--ink); }
-
-    /* Handy: Feinschliff (muss nach den Grundregeln stehen) */
-    @media (max-width: 700px) {
-      .duty { gap: 22px; }
-      .plan { padding: 22px; }
-      .plan ul { margin-top: 16px; padding-top: 14px; gap: 7px; }
-      .price { font-size: 34px; }
-      .plans { gap: 20px; }
-      .faq summary { padding: 15px 2px; font-size: 15.5px; }
-      .rules li { padding: 13px 16px; }
-      .family-row .btn { order: 2; }
-    }
-
-    /* Einblenden beim Scrollen — nur mit JS und ohne reduzierte Bewegung */
-    .js .rv { opacity: 0; transform: translateY(32px); transition: opacity .7s ease, transform .85s cubic-bezier(.16,.84,.24,1); }
-    .js .rv.in { opacity: 1; transform: none; }
-    @media (prefers-reduced-motion: reduce) { .js .rv { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
-
-    /* Look „hausdex“: motif=ruled, soft=deep, edge=panel, cards=bubble, steps=mirror, head=num, h2=light, duty=list, faq=lines, radius=16 (looks.js) */
-    :root { --radius: 16px; }
-    .btn { border-radius: 12px; }
-    .btn.sm { border-radius: 10px; }
-    .ic { border-radius: 10px; }
-    html.dark { --bg-soft: color-mix(in oklab, var(--bg) 62%, #000); }
-    section.soft { box-shadow: inset 0 1px 0 rgba(255,255,255,.05), inset 0 -1px 0 rgba(255,255,255,.05); }
-    section.soft { margin: 0 clamp(8px, 2vw, 28px); border-radius: clamp(22px, 3.4vw, 44px);
-      border: 1px solid color-mix(in oklab, var(--accent) 22%, transparent); }
-    section.soft + section.soft { margin-top: 16px; }
-    section.soft { position: relative; isolation: isolate; }
-    section.soft::before { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; border-radius: inherit;
-      background: var(--accent); opacity: 0.12;
-      -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='30' viewBox='0 0 480 30'%3E%3Cpath d='M0 29.5H480' fill='none' stroke='%23000' stroke-width='1'/%3E%3Cpath d='M56 0V30' fill='none' stroke='%23000' stroke-width='1.6'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 18%, #000 75%); -webkit-mask-size: 480px 30px, 100% 100%; -webkit-mask-repeat: repeat, no-repeat; -webkit-mask-composite: source-in;
-      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='30' viewBox='0 0 480 30'%3E%3Cpath d='M0 29.5H480' fill='none' stroke='%23000' stroke-width='1'/%3E%3Cpath d='M56 0V30' fill='none' stroke='%23000' stroke-width='1.6'/%3E%3C/svg%3E"), linear-gradient(100deg, transparent 18%, #000 75%); mask-size: 480px 30px, 100% 100%; mask-repeat: repeat, no-repeat; mask-composite: intersect; }
-    @media (max-width: 700px) { section.soft::before { opacity: 0.084; } }
-    .feature { text-align: center; padding: 34px 24px 30px; }
-    .feature .ic { width: 66px; height: 66px; border-radius: 50%; margin: 0 auto 20px;
-      box-shadow: 0 0 0 9px color-mix(in oklab, var(--accent) 7%, transparent); }
-    .feature .ic .i { width: 28px; height: 28px; }
-    @media (max-width: 600px) { .feature { text-align: left; padding: 16px; }
-      .feature .ic { width: 40px; height: 40px; margin: 0; box-shadow: none; } .feature .ic .i { width: 20px; height: 20px; }
-      .feature { grid-template-columns: 40px 1fr; } }
-    .flow { grid-template-columns: auto 1fr; }
-    .flow > div:last-child { order: -1; }
-    .flow .phone { transform: rotate(-3deg); }
-    .steps li::before { border-radius: calc(var(--radius) * .6); }
-    @media (max-width: 860px) { .flow { grid-template-columns: 1fr; } }
-    main { counter-reset: sec; }
-    main > section { counter-increment: sec; }
-    .eyebrow { font-size: 12px; text-transform: uppercase; letter-spacing: .14em; font-variant-numeric: tabular-nums; }
-    .eyebrow::before { content: counter(sec, decimal-leading-zero) '  /  '; white-space: pre; color: var(--muted); }
-    h2 { font-weight: 560; letter-spacing: -.04em; font-size: clamp(29px, 3.9vw, 45px); line-height: 1.08; }
-
-    .show { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
-    .show-points { margin-top: 24px; }
-    @media (max-width: 860px) { .show { grid-template-columns: 1fr; gap: 28px; } .show-visual { order: 2; } }
-    .hwflow { position: relative; display: flex; flex-direction: column; gap: 20px; max-width: 430px; margin: 0 auto; }
-    .hwflow::before { content: ''; position: absolute; left: 9px; top: 14px; bottom: 30px; width: 2px; background: linear-gradient(#818CF8, transparent); opacity: .45; }
-    .hw-step { position: relative; padding-left: 36px; }
-    .hw-step::before { content: ''; position: absolute; left: 2px; top: 2px; width: 16px; height: 16px; border-radius: 50%; background: #818CF8; box-shadow: 0 0 0 5px rgba(129,140,248,.18); }
-    .hw-who { display: block; font-size: 12.5px; color: var(--muted); margin-bottom: 7px; letter-spacing: .01em; }
-    .hw-box { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 16px; background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow); font-size: 14.5px; line-height: 1.45; }
-    .hw-bubble { border-top-left-radius: 4px; background: rgba(129,140,248,.12); border-color: rgba(129,140,248,.35); }
-    .hw-link { color: var(--accent-text); text-decoration: underline; text-underline-offset: 3px; }
-    .hw-meta { color: var(--muted); font-size: 13.5px; }
-    .hw-file { align-self: flex-start; margin-top: 6px; font-size: 10.5px; font-weight: 800; letter-spacing: .06em; padding: 3px 7px; border-radius: 6px; background: #E5484D; color: #fff; }
-    .hw-filename { margin-top: -22px; margin-left: 46px; font-size: 13px; color: var(--ink); }
-    .hw-btn { align-self: flex-end; margin-top: 8px; padding: 7px 14px; border-radius: 10px; background: #818CF8; color: #0B0D1A; font-weight: 700; font-size: 13.5px; }
-    .hw-seal { align-self: flex-start; margin-top: 6px; padding: 5px 10px; border-radius: 999px; background: rgba(48,164,108,.16); color: #4CC38A; font-weight: 700; font-size: 13px; }
-    .hw-step.s1 { animation: hw1 10s infinite both; } .hw-step.s2 { animation: hw2 10s infinite both; } .hw-step.s3 { animation: hw3 10s infinite both; }
-    .hw-seal { animation: hwSeal 10s infinite both; }
-    @keyframes hw1 { 0% { opacity: 0; transform: translateY(10px); } 6%, 90% { opacity: 1; transform: none; } 100% { opacity: 0; } }
-    @keyframes hw2 { 0%, 20% { opacity: 0; transform: translateY(10px); } 27%, 90% { opacity: 1; transform: none; } 100% { opacity: 0; } }
-    @keyframes hw3 { 0%, 42% { opacity: 0; transform: translateY(10px); } 49%, 90% { opacity: 1; transform: none; } 100% { opacity: 0; } }
-    @keyframes hwSeal { 0%, 56% { opacity: 0; transform: scale(.85); } 62%, 90% { opacity: 1; transform: none; } 100% { opacity: 0; } }
-    @media (prefers-reduced-motion: reduce) { .hw-step, .hw-seal { animation: none !important; opacity: 1 !important; transform: none !important; } }
-    /* nur 2 Tarife (noSuite) + Handwerker-Block (partner) */
-    .plans.two { grid-template-columns: repeat(2, 1fr); max-width: 760px; margin-inline: auto; }
-    @media (max-width: 960px) { .plans.two { grid-template-columns: 1fr; max-width: 480px; } }
-    .partner { display: grid; grid-template-columns: auto 1fr auto; gap: 28px; align-items: center; padding: 32px; border-radius: 22px; background: var(--surface); border: 1px solid var(--border); }
-    .partner img { border-radius: 18px; }
-    .partner h2 { margin-top: 4px; }
-    .partner .btn { white-space: nowrap; }
-    @media (max-width: 760px) { .partner { grid-template-columns: 1fr; padding: 24px; gap: 18px; } }
-
-    /* Kopf-Bühne (stages.js) */
-    .hero.staged { isolation: isolate; min-height: min(780px, 100svh); display: flex; align-items: center; background: var(--bg); }
-    .hero.staged::before { display: none; }
-    .hero.staged > .wrap { position: relative; z-index: 1; width: 100%; }
-    .stage { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
-    @media (max-width: 900px) { .hero.staged { min-height: 0; } }
-
-    .hero.st-row-h { display: block; min-height: 0; padding-bottom: 0;
-      background: radial-gradient(120% 60% at 50% 100%, color-mix(in oklab, var(--accent) 24%, transparent), transparent 70%), var(--bg); }
-    .hero.st-row-h > .wrap { grid-template-columns: 1fr; text-align: center; padding-top: 72px; padding-bottom: 8px; }
-    .hero.st-row-h > .wrap > div:first-child { max-width: 860px; margin: 0 auto; }
-    .hero.st-row-h h1 { font-size: clamp(36px, 5.4vw, 64px); }
-    .hero.st-row-h .sub { margin-left: auto; margin-right: auto; max-width: 640px; }
-    .hero.st-row-h .cta, .hero.st-row-h .ticks, .hero.st-row-h .hint { justify-content: center; }
-    .hero.st-row-h .ticks { border-top: 0; padding-top: 0; }
-    .hero.st-row-h .ios-tab { margin-left: auto; margin-right: auto; text-align: left; }
-    .hero.st-row-h .shots { display: none; }
-    .row-phones { position: relative; display: flex; justify-content: center; align-items: flex-start; height: 430px; margin-top: 44px; overflow: hidden; padding-top: 14px; }
-    .row-phones .phone { --pw: 232px; position: relative; flex: none; }
-    .hero.st-row-h::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 120px; pointer-events: none; z-index: 2;
-      background: linear-gradient(0deg, var(--bg), transparent); }
-    .row-phones .p3 { z-index: 3; }
-    .row-phones .p2 { transform: translateY(54px) rotate(-5deg) scale(.9); z-index: 2; margin-right: -34px; }
-    .row-phones .p4 { transform: translateY(54px) rotate(5deg) scale(.9); z-index: 2; margin-left: -34px; }
-    .row-phones .p1 { transform: translateY(150px) rotate(-11deg) scale(.8); margin-right: -46px; opacity: .8; }
-    .row-phones .p5 { transform: translateY(150px) rotate(11deg) scale(.8); margin-left: -46px; opacity: .8; }
-    @media (prefers-reduced-motion: no-preference) {
-      .row-phones:not(.band) .phone { animation: row-in 1s cubic-bezier(.16,.84,.24,1) both, row-bob 7s ease-in-out 1.4s infinite; }
-      .row-phones:not(.band) .p2, .row-phones:not(.band) .p4 { animation-delay: .14s, 2.3s; }
-      .row-phones:not(.band) .p1, .row-phones:not(.band) .p5 { animation-delay: .28s, 3.2s; }
-    }
-    @keyframes row-in { from { opacity: 0; translate: 0 120px; scale: .9; } }
-    @keyframes row-bob { 0%, 100% { translate: 0 0; } 50% { translate: 0 -12px; } }
-    @keyframes row-fan-1 { from { opacity: 0; rotate: 22deg; translate: 0 60px; } } @keyframes row-fan-2 { from { opacity: 0; rotate: 11deg; translate: 0 60px; } }
-    @keyframes row-fan-4 { from { opacity: 0; rotate: -11deg; translate: 0 60px; } } @keyframes row-fan-5 { from { opacity: 0; rotate: -22deg; translate: 0 60px; } }
-    @keyframes row-shelf { from { opacity: 0; scale: .2 1; } }
-    @media (max-width: 900px) {
-      .hero.st-row-h > .wrap { padding-top: 40px; }
-      .hero.st-row-h .ticks { justify-content: flex-start; text-align: left; }
-      .row-phones { height: 330px; margin-top: 30px; }
-      .hero.st-row-h::after { height: 64px; }
-      .row-phones .phone { --pw: 168px; }
-      .row-phones:not(.band) .p1, .row-phones:not(.band) .p5 { display: none; }
-    }
-    @media (max-width: 520px) { .row-phones .phone { --pw: 138px; } .row-phones { height: 280px; }
-      .row-phones .p2 { margin-right: -22px; } .row-phones .p4 { margin-left: -22px; } }
-
-    /* Kopf „hausdex“: Bühne row, phones=center, frame=tint (looks.js, stages.js) */
-    .shots .phone { background: linear-gradient(160deg, color-mix(in oklab, var(--accent) 55%, #2b2b31), #0e0e11 46%); }
-
-    .kicker { background: none; padding: 0 0 0 14px; border-radius: 0; border-left: 2px solid var(--accent); font-size: 12px; text-transform: uppercase; letter-spacing: .14em; }
-    .not-suite { display: flex; gap: 12px; align-items: flex-start; margin-top: 22px; padding: 16px 18px; border-radius: 14px; font-size: 15px; line-height: 1.5;
-      border: 1px dashed color-mix(in oklab, var(--ink) 35%, transparent); color: var(--muted); }
-    .not-suite b { color: var(--ink); }
-    .not-suite .i { flex: none; width: 20px; height: 20px; margin-top: 1px; color: var(--ink); }
+@font-face{font-family:'Inter';src:url('assets/inter-latin-var.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}:root{--accent:#818CF8;--on-accent:#fff;--radius:16px;--wrap:1120px}html.light{--bg:#ffffff;--bg-soft:color-mix(in oklab,#f7f7f9 96%,var(--accent));--surface:#ffffff;--border:color-mix(in oklab,#e7e7eb 94%,var(--accent));--ink:#0d0d12;--muted:#5c5c69;--accent-text:color-mix(in oklab,var(--accent) 82%,#000);--accent-soft:color-mix(in oklab,var(--accent) 10%,#fff);--card:var(--surface);--shadow:0 1px 2px rgba(16,16,24,.04),0 8px 24px -12px rgba(16,16,24,.12);color-scheme:light}html.dark{--bg:#0B0D1A;--bg-soft:color-mix(in oklab,#0B0D1A 96%,#fff);--surface:color-mix(in oklab,#0B0D1A 93%,#fff);--card:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.02));--border:rgba(255,255,255,.085);--ink:#f6f5f7;--muted:#aaa4ad;--accent-text:color-mix(in oklab,var(--accent) 70%,#fff);--accent-soft:color-mix(in oklab,var(--accent) 18%,transparent);--shadow:0 1px 2px rgba(0,0,0,.3),0 12px 32px -16px rgba(0,0,0,.6);color-scheme:dark}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:80px;-webkit-text-size-adjust:100%}body{background:var(--bg);color:var(--ink);font:400 16px/1.6 'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-feature-settings:'cv11','ss01';-webkit-font-smoothing:antialiased;overflow-x:hidden}a{color:var(--accent-text);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:3px}:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}img{max-width:100%}.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}@media (max-width:600px){.wrap{padding:0 16px}}.i{width:20px;height:20px;flex:none}.top{position:sticky;top:0;z-index:40;background:color-mix(in oklab,var(--bg) 82%,transparent);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .2s}.top.scrolled{border-bottom-color:var(--border)}.top .wrap{display:flex;align-items:center;gap:28px;height:64px}.brand{display:flex;align-items:center;gap:10px;color:var(--ink);font-weight:650;font-size:17px;letter-spacing:-.01em}.brand:hover{text-decoration:none}.brand img{width:32px;height:32px;border-radius:8px;box-shadow:0 0 0 1px rgba(255,255,255,.16)}.brand .wm span{color:var(--accent-text)}.top nav{display:flex;gap:24px;margin-left:auto}.top nav a{color:var(--muted);font-size:14.5px;font-weight:500}.top nav a:hover{color:var(--ink);text-decoration:none}@media (max-width:760px){.top nav{display:none}.top .btn{margin-left:auto}}.btn{display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 22px;border-radius:12px;font-weight:600;font-size:15.5px;background:var(--accent);color:var(--on-accent);box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 6px 20px -8px color-mix(in oklab,var(--accent) 70%,transparent);transition:transform .15s,box-shadow .15s,background .15s}.btn:hover{text-decoration:none;transform:translateY(-1px);box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 10px 26px -8px color-mix(in oklab,var(--accent) 80%,transparent)}.btn.sm{height:38px;padding:0 16px;font-size:14px;border-radius:10px}.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--border)}.btn.ghost:hover{background:var(--bg-soft)}.btn .play{width:14px;height:14px;fill:currentColor;stroke:none}.btn .i{width:16px;height:16px}.hero{position:relative;overflow:hidden}.hero::before{content:'';position:absolute;inset:-20% -10% auto 40%;height:120%;z-index:-1;pointer-events:none;background:radial-gradient(closest-side,color-mix(in oklab,var(--accent) 22%,transparent),transparent 75%)}.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-top:56px;padding-bottom:40px}.kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--accent-text);background:var(--accent-soft);padding:6px 12px;border-radius:999px;margin-bottom:22px}h1{font-size:clamp(34px,4.6vw,54px);line-height:1.05;font-weight:750;letter-spacing:-.035em}h1 em{font-style:normal;color:var(--accent-text)}.sub{margin-top:20px;font-size:18px;line-height:1.6;color:var(--muted);max-width:520px}.sub strong{color:var(--ink);font-weight:600}.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.hint{margin-top:12px;font-size:13px;color:var(--muted);display:flex;align-items:center;gap:6px}.hint .i{width:15px;height:15px}.ticks{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:28px;padding-top:24px;border-top:1px solid var(--border)}.ticks li{list-style:none;display:flex;align-items:center;gap:8px;font-size:14.5px;font-weight:500}.ticks .i{width:17px;height:17px;color:var(--accent-text)}.shots{position:relative;height:560px}.shots .phone{position:absolute}.shots .phone.a{left:4%;top:0;z-index:2}.shots .phone.b{right:0;top:64px;transform:scale(.9);transform-origin:top right;opacity:.96}@media (max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:36px;padding-top:36px}.shots{height:380px;max-width:420px;width:100%;margin:0 auto;-webkit-mask-image:linear-gradient(#000 70%,transparent);mask-image:linear-gradient(#000 70%,transparent)}.shots .phone{--pw:210px}.shots .phone.a{left:2%}.shots .phone.b{top:40px}}.phone{--pw:262px;width:var(--pw);padding:8px;border-radius:calc(var(--pw) * .16);background:linear-gradient(160deg,#2b2b31,#0e0e11 40%);box-shadow:0 0 0 1px rgba(255,255,255,.06) inset,0 0 0 1px rgba(0,0,0,.5),0 40px 70px -30px rgba(10,10,20,.55),0 18px 30px -18px rgba(10,10,20,.35)}.screen{position:relative;border-radius:calc(var(--pw) * .13);overflow:hidden;background:var(--bar);padding-top:calc(var(--pw) * .1)}.screen::before{content:'';position:absolute;top:calc(var(--pw) * .03);left:50%;transform:translateX(-50%);width:30%;height:calc(var(--pw) * .075);border-radius:99px;background:#000}.screen img{display:block;width:100%;height:auto}section{padding:80px 0}section.soft{background:var(--bg-soft)}@media (max-width:700px){section{padding:52px 0}.head{margin-bottom:24px}.lead{font-size:16px}.sub{font-size:16.5px}.cta .btn{flex:1 1 100%;justify-content:center}.ticks{gap:8px 16px}.rules li{padding:14px 16px;grid-template-columns:32px 1fr;gap:12px;font-size:14.5px}.rules .ic{width:32px;height:32px}}.eyebrow{font-size:13px;font-weight:600;letter-spacing:.02em;color:var(--accent-text);margin-bottom:10px}h2{font-size:clamp(27px,3.4vw,38px);line-height:1.12;font-weight:720;letter-spacing:-.03em;max-width:760px}.lead{margin-top:14px;font-size:17px;color:var(--muted);max-width:620px}.lead strong{color:var(--ink);font-weight:600}.head{margin-bottom:40px}.duty{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}.rules{list-style:none;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}.rules li{display:grid;grid-template-columns:36px 1fr;gap:14px;padding:18px 22px;border-top:1px solid var(--border);font-size:15px;color:var(--muted)}.rules li:first-child{border-top:0}.rules b{display:block;color:var(--ink);font-weight:600;font-size:15.5px;margin-bottom:1px}.ic{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent-text)}@media (max-width:860px){.duty{grid-template-columns:1fr;gap:28px}}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}.feature .ic{margin-bottom:16px}.feature h3{font-size:16.5px;font-weight:640;letter-spacing:-.01em;margin-bottom:6px}.feature p{font-size:15px;color:var(--muted);line-height:1.55}@media (max-width:900px){.features{grid-template-columns:1fr 1fr}}@media (max-width:600px){.features{grid-template-columns:1fr;gap:10px}.feature{padding:16px;display:grid;grid-template-columns:36px 1fr;gap:0 14px}.feature .ic{margin:0;grid-row:span 2}.feature p{font-size:14.5px}}.flow{display:grid;grid-template-columns:1fr auto;gap:72px;align-items:center}.steps{list-style:none;counter-reset:s;margin-top:32px}.steps li{counter-increment:s;position:relative;padding:0 0 26px 56px}.steps li:last-child{padding-bottom:0}.steps li::before{content:counter(s);position:absolute;left:0;top:-2px;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:650;font-size:15px;background:var(--accent);color:var(--on-accent)}.steps li:not(:last-child)::after{content:'';position:absolute;left:17.5px;top:40px;bottom:6px;width:1px;background:var(--border)}.steps b{display:block;font-size:17px;font-weight:640;margin-bottom:4px}.steps p{color:var(--muted);font-size:15.5px}.flow .phone{--pw:280px}@media (max-width:860px){.flow{grid-template-columns:1fr}.flow>div:last-child{display:none}.steps{margin-top:24px}}.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:stretch}.plan{position:relative;display:flex;flex-direction:column;min-width:0;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}.plan.pro{border-color:color-mix(in oklab,var(--accent) 55%,var(--border));box-shadow:0 0 0 1px color-mix(in oklab,var(--accent) 55%,transparent),var(--shadow)}.plan .badge{position:absolute;top:-11px;left:28px;font-size:12px;font-weight:600;padding:3px 10px;border-radius:99px;background:var(--accent);color:var(--on-accent)}.plan h3{font-size:15px;font-weight:600;color:var(--muted)}.price{margin-top:10px;font-size:38px;font-weight:720;letter-spacing:-.03em;line-height:1.1}.price small{font-size:15px;font-weight:500;color:var(--muted);letter-spacing:0}.per{font-size:14px;color:var(--muted);margin-top:4px;min-height:22px}.plan ul{list-style:none;margin-top:22px;padding-top:20px;border-top:1px solid var(--border);display:grid;gap:10px}.plan li{display:flex;gap:10px;font-size:15px}.plan li .i{width:18px;height:18px;margin-top:2px;color:var(--accent-text)}.plan.suite{color:#f4f4f6;border:1px solid transparent;background:linear-gradient(180deg,#121218,#0b0b0f) padding-box,linear-gradient(140deg,#3b82f6,#8b5cf6 55%,var(--accent)) border-box}.plan.suite h3,.plan.suite .per,.plan.suite .price small{color:#a3a3ad}.plan.suite ul{border-color:rgba(255,255,255,.1)}.plan.suite li .i{color:#f4f4f6}.icons{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:22px}.icons img{width:26px;height:26px;border-radius:7px}.fine{margin-top:20px;font-size:13.5px;color:var(--muted)}.trust{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;justify-content:flex-start;gap:10px 26px;font-size:14px;color:var(--muted)}.trust li{display:flex;align-items:center;gap:8px}.trust .i{width:18px;height:18px;flex:none;color:var(--accent-text)}.trust a{color:inherit}@media (max-width:960px){.plans{grid-template-columns:1fr;max-width:480px}}.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}.faq details{border-bottom:1px solid var(--border)}.faq details:first-child{border-top:1px solid var(--border)}.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:18px 2px;font-weight:600;font-size:16px}.faq summary::-webkit-details-marker{display:none}.faq summary .i{color:var(--muted);transition:transform .2s}.faq details[open] summary .i{transform:rotate(180deg)}.faq .a{padding:0 2px 20px;color:var(--muted);font-size:15.5px;max-width:640px}.ask{margin-top:18px;color:var(--muted);font-size:15px;display:flex;align-items:center;gap:8px}@media (max-width:860px){.faq{grid-template-columns:1fr;gap:24px}}.family{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;margin-top:32px}.family a{display:flex;flex-direction:column;align-items:center;gap:8px;padding:16px 6px 14px;border-radius:14px;color:var(--ink);text-align:center;transition:background .15s}.family a:hover{background:var(--surface);text-decoration:none;box-shadow:var(--shadow)}.family a[aria-disabled]{cursor:default;opacity:.75}.family a[aria-disabled]:hover{background:none;box-shadow:none}.family img{width:44px;height:44px;border-radius:11px;box-shadow:0 0 0 1px rgba(255,255,255,.16)}.family b{font-size:13.5px;font-weight:600;line-height:1.2}.family small{font-size:12px;color:var(--muted);line-height:1.3}.family-row{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}@media (max-width:900px){.family{grid-template-columns:repeat(4,1fr)}}@media (max-width:480px){.family{grid-template-columns:repeat(4,1fr);gap:2px;margin-top:20px}.family a{padding:10px 2px;gap:6px}.family img{width:40px;height:40px}.family b{font-size:11.5px}.family small{display:none}}.points{margin-top:16px;padding:22px 24px;border:1px solid var(--border);border-radius:var(--radius);background:var(--card)}.points p{font-size:15px;color:var(--muted);margin-bottom:14px}.points p b{color:var(--ink);font-weight:600;margin-right:4px}.points ol{list-style:none;counter-reset:p;display:flex;flex-wrap:wrap;gap:8px}.points li{counter-increment:p;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;padding:5px 12px 5px 5px;border-radius:99px;background:var(--bg-soft);border:1px solid var(--border)}.points li::before{content:counter(p);width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:650;background:var(--accent-soft);color:var(--accent-text)}.points.plain li{padding:5px 12px}.points.plain li::before{display:none}@media (max-width:600px){.points{padding:16px}.points li{font-size:13px}}footer{border-top:1px solid var(--border);padding:32px 0 40px;font-size:14px;color:var(--muted)}footer .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between}footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}footer .note{display:block;font-size:13px;line-height:1.55;margin-bottom:20px;max-width:var(--wrap)}footer a{color:var(--muted)}footer a:hover{color:var(--ink)}@media (max-width:700px){.duty{gap:22px}.plan{padding:22px}.plan ul{margin-top:16px;padding-top:14px;gap:7px}.price{font-size:34px}.plans{gap:20px}.faq summary{padding:15px 2px;font-size:15.5px}.rules li{padding:13px 16px}.family-row .btn{order:2}}.js .rv{opacity:0;transform:translateY(32px);transition:opacity .7s ease,transform .85s cubic-bezier(.16,.84,.24,1)}.js .rv.in{opacity:1;transform:none}@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}:root{--radius:16px}.btn{border-radius:12px}.btn.sm{border-radius:10px}.ic{border-radius:10px}html.dark{--bg-soft:color-mix(in oklab,var(--bg) 62%,#000)}section.soft{box-shadow:inset 0 1px 0 rgba(255,255,255,.05),inset 0 -1px 0 rgba(255,255,255,.05)}section.soft{margin:0 clamp(8px,2vw,28px);border-radius:clamp(22px,3.4vw,44px);border:1px solid color-mix(in oklab,var(--accent) 22%,transparent)}section.soft + section.soft{margin-top:16px}section.soft{position:relative;isolation:isolate}section.soft::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;border-radius:inherit;background:var(--accent);opacity:0.12;-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='30' viewBox='0 0 480 30'%3E%3Cpath d='M0 29.5H480' fill='none' stroke='%23000' stroke-width='1'/%3E%3Cpath d='M56 0V30' fill='none' stroke='%23000' stroke-width='1.6'/%3E%3C/svg%3E"),linear-gradient(100deg,transparent 18%,#000 75%);-webkit-mask-size:480px 30px,100% 100%;-webkit-mask-repeat:repeat,no-repeat;-webkit-mask-composite:source-in;mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='30' viewBox='0 0 480 30'%3E%3Cpath d='M0 29.5H480' fill='none' stroke='%23000' stroke-width='1'/%3E%3Cpath d='M56 0V30' fill='none' stroke='%23000' stroke-width='1.6'/%3E%3C/svg%3E"),linear-gradient(100deg,transparent 18%,#000 75%);mask-size:480px 30px,100% 100%;mask-repeat:repeat,no-repeat;mask-composite:intersect}@media (max-width:700px){section.soft::before{opacity:0.084}}.feature{text-align:center;padding:34px 24px 30px}.feature .ic{width:66px;height:66px;border-radius:50%;margin:0 auto 20px;box-shadow:0 0 0 9px color-mix(in oklab,var(--accent) 7%,transparent)}.feature .ic .i{width:28px;height:28px}@media (max-width:600px){.feature{text-align:left;padding:16px}.feature .ic{width:40px;height:40px;margin:0;box-shadow:none}.feature .ic .i{width:20px;height:20px}.feature{grid-template-columns:40px 1fr}}.flow{grid-template-columns:auto 1fr}.flow>div:last-child{order:-1}.flow .phone{transform:rotate(-3deg)}.steps li::before{border-radius:calc(var(--radius) * .6)}@media (max-width:860px){.flow{grid-template-columns:1fr}}main{counter-reset:sec}main>section{counter-increment:sec}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-variant-numeric:tabular-nums}.eyebrow::before{content:counter(sec,decimal-leading-zero) '  /  ';white-space:pre;color:var(--muted)}h2{font-weight:560;letter-spacing:-.04em;font-size:clamp(29px,3.9vw,45px);line-height:1.08}.show{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}.show-points{margin-top:24px}@media (max-width:860px){.show{grid-template-columns:1fr;gap:28px}.show-visual{order:2}}.hwflow{position:relative;display:flex;flex-direction:column;gap:20px;max-width:430px;margin:0 auto}.hwflow::before{content:'';position:absolute;left:9px;top:14px;bottom:30px;width:2px;background:linear-gradient(#818CF8,transparent);opacity:.45}.hw-step{position:relative;padding-left:36px}.hw-step::before{content:'';position:absolute;left:2px;top:2px;width:16px;height:16px;border-radius:50%;background:#818CF8;box-shadow:0 0 0 5px rgba(129,140,248,.18)}.hw-who{display:block;font-size:12.5px;color:var(--muted);margin-bottom:7px;letter-spacing:.01em}.hw-box{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:16px;background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow);font-size:14.5px;line-height:1.45}.hw-bubble{border-top-left-radius:4px;background:rgba(129,140,248,.12);border-color:rgba(129,140,248,.35)}.hw-link{color:var(--accent-text);text-decoration:underline;text-underline-offset:3px}.hw-meta{color:var(--muted);font-size:13.5px}.hw-file{align-self:flex-start;margin-top:6px;font-size:10.5px;font-weight:800;letter-spacing:.06em;padding:3px 7px;border-radius:6px;background:#E5484D;color:#fff}.hw-filename{margin-top:-22px;margin-left:46px;font-size:13px;color:var(--ink)}.hw-btn{align-self:flex-end;margin-top:8px;padding:7px 14px;border-radius:10px;background:#818CF8;color:#0B0D1A;font-weight:700;font-size:13.5px}.hw-seal{align-self:flex-start;margin-top:6px;padding:5px 10px;border-radius:999px;background:rgba(48,164,108,.16);color:#4CC38A;font-weight:700;font-size:13px}.hw-step.s1{animation:hw1 10s infinite both}.hw-step.s2{animation:hw2 10s infinite both}.hw-step.s3{animation:hw3 10s infinite both}.hw-seal{animation:hwSeal 10s infinite both}@keyframes hw1{0%{opacity:0;transform:translateY(10px)}6%,90%{opacity:1;transform:none}100%{opacity:0}}@keyframes hw2{0%,20%{opacity:0;transform:translateY(10px)}27%,90%{opacity:1;transform:none}100%{opacity:0}}@keyframes hw3{0%,42%{opacity:0;transform:translateY(10px)}49%,90%{opacity:1;transform:none}100%{opacity:0}}@keyframes hwSeal{0%,56%{opacity:0;transform:scale(.85)}62%,90%{opacity:1;transform:none}100%{opacity:0}}@media (prefers-reduced-motion:reduce){.hw-step,.hw-seal{animation:none !important;opacity:1 !important;transform:none !important}}.plans.two{grid-template-columns:repeat(2,1fr);max-width:760px;margin-inline:auto}@media (max-width:960px){.plans.two{grid-template-columns:1fr;max-width:480px}}.partner{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;padding:32px;border-radius:22px;background:var(--surface);border:1px solid var(--border)}.partner img{border-radius:18px}.partner h2{margin-top:4px}.partner .btn{white-space:nowrap}@media (max-width:760px){.partner{grid-template-columns:1fr;padding:24px;gap:18px}}.hero.staged{isolation:isolate;min-height:min(780px,100svh);display:flex;align-items:center;background:var(--bg)}.hero.staged::before{display:none}.hero.staged>.wrap{position:relative;z-index:1;width:100%}.stage{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none}@media (max-width:900px){.hero.staged{min-height:0}}.hero.st-row-h{display:block;min-height:0;padding-bottom:0;background:radial-gradient(120% 60% at 50% 100%,color-mix(in oklab,var(--accent) 24%,transparent),transparent 70%),var(--bg)}.hero.st-row-h>.wrap{grid-template-columns:1fr;text-align:center;padding-top:72px;padding-bottom:8px}.hero.st-row-h>.wrap>div:first-child{max-width:860px;margin:0 auto}.hero.st-row-h h1{font-size:clamp(36px,5.4vw,64px)}.hero.st-row-h .sub{margin-left:auto;margin-right:auto;max-width:640px}.hero.st-row-h .cta,.hero.st-row-h .ticks,.hero.st-row-h .hint{justify-content:center}.hero.st-row-h .ticks{border-top:0;padding-top:0}.hero.st-row-h .ios-tab{margin-left:auto;margin-right:auto;text-align:left}.hero.st-row-h .shots{display:none}.row-phones{position:relative;display:flex;justify-content:center;align-items:flex-start;height:430px;margin-top:44px;overflow:hidden;padding-top:14px}.row-phones .phone{--pw:232px;position:relative;flex:none}.hero.st-row-h::after{content:'';position:absolute;left:0;right:0;bottom:0;height:120px;pointer-events:none;z-index:2;background:linear-gradient(0deg,var(--bg),transparent)}.row-phones .p3{z-index:3}.row-phones .p2{transform:translateY(54px) rotate(-5deg) scale(.9);z-index:2;margin-right:-34px}.row-phones .p4{transform:translateY(54px) rotate(5deg) scale(.9);z-index:2;margin-left:-34px}.row-phones .p1{transform:translateY(150px) rotate(-11deg) scale(.8);margin-right:-46px;opacity:.8}.row-phones .p5{transform:translateY(150px) rotate(11deg) scale(.8);margin-left:-46px;opacity:.8}@media (prefers-reduced-motion:no-preference){.row-phones:not(.band) .phone{animation:row-in 1s cubic-bezier(.16,.84,.24,1) both,row-bob 7s ease-in-out 1.4s infinite}.row-phones:not(.band) .p2,.row-phones:not(.band) .p4{animation-delay:.14s,2.3s}.row-phones:not(.band) .p1,.row-phones:not(.band) .p5{animation-delay:.28s,3.2s}}@keyframes row-in{from{opacity:0;translate:0 120px;scale:.9}}@keyframes row-bob{0%,100%{translate:0 0}50%{translate:0 -12px}}@keyframes row-fan-1{from{opacity:0;rotate:22deg;translate:0 60px}}@keyframes row-fan-2{from{opacity:0;rotate:11deg;translate:0 60px}}@keyframes row-fan-4{from{opacity:0;rotate:-11deg;translate:0 60px}}@keyframes row-fan-5{from{opacity:0;rotate:-22deg;translate:0 60px}}@keyframes row-shelf{from{opacity:0;scale:.2 1}}@media (max-width:900px){.hero.st-row-h>.wrap{padding-top:40px}.hero.st-row-h .ticks{justify-content:flex-start;text-align:left}.row-phones{height:330px;margin-top:30px}.hero.st-row-h::after{height:64px}.row-phones .phone{--pw:168px}.row-phones:not(.band) .p1,.row-phones:not(.band) .p5{display:none}}@media (max-width:520px){.row-phones .phone{--pw:138px}.row-phones{height:280px}.row-phones .p2{margin-right:-22px}.row-phones .p4{margin-left:-22px}}.shots .phone{background:linear-gradient(160deg,color-mix(in oklab,var(--accent) 55%,#2b2b31),#0e0e11 46%)}.kicker{background:none;padding:0 0 0 14px;border-radius:0;border-left:2px solid var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.14em}h1 em{background:linear-gradient(100deg,var(--accent-text) 20%,color-mix(in oklab,var(--accent-text) 55%,#fff));background:linear-gradient(100deg,var(--accent-text) 20%,oklch(from var(--accent-text) calc(l + .1) calc(c * .85) calc(h + 30)));-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-box-decoration-break:clone;box-decoration-break:clone}main>section:not(.soft){position:relative;isolation:isolate}main>section:not(.soft)::after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;-webkit-mask-image:linear-gradient(180deg,transparent,#000 18%,#000 82%,transparent);mask-image:linear-gradient(180deg,transparent,#000 18%,#000 82%,transparent);background:radial-gradient(38% 46% at 100% 4%,color-mix(in oklab,var(--accent) 9%,transparent),transparent 72%),radial-gradient(30% 40% at 0% 96%,color-mix(in oklab,var(--accent) 5%,transparent),transparent 72%)}main>section:not(.soft):nth-of-type(even)::after{background:radial-gradient(38% 46% at 0% 4%,color-mix(in oklab,var(--accent) 9%,transparent),transparent 72%),radial-gradient(30% 40% at 100% 96%,color-mix(in oklab,var(--accent) 5%,transparent),transparent 72%)}.plan.pro,.teams,.partner{position:relative}.plan.pro::after,.teams::before,.partner::before,.endc::before{content:'';position:absolute;left:12%;right:12%;top:-1px;height:1px;pointer-events:none;background:linear-gradient(90deg,transparent,color-mix(in oklab,var(--accent) 65%,#fff),transparent)}.teams::before{opacity:.55}.plan.pro{background:radial-gradient(130% 55% at 50% 0%,color-mix(in oklab,var(--accent) 14%,transparent),transparent 70%),var(--surface);box-shadow:0 0 0 1px color-mix(in oklab,var(--accent) 55%,transparent),0 46px 90px -50px color-mix(in oklab,var(--accent) 75%,transparent),var(--shadow)}.price,.tiers .num{font-variant-numeric:tabular-nums}.trust{margin-top:18px;padding:14px 20px;border-radius:var(--radius);border:1px solid var(--border);background:color-mix(in oklab,var(--ink) 2.5%,transparent)}@media (max-width:600px){.trust{padding:14px 16px;gap:10px 18px}}.feature.has-shot{position:relative;overflow:hidden;isolation:isolate}.feature.has-shot>:not(.f-shot){position:relative;z-index:1}.f-shot{position:absolute;right:7%;top:30px;z-index:0;pointer-events:none;rotate:7deg;-webkit-mask-image:linear-gradient(180deg,#000 58%,transparent 92%);mask-image:linear-gradient(180deg,#000 58%,transparent 92%)}.f-shot .phone{--pw:214px}.feature.has-shot h3,.feature.has-shot p{max-width:54%}.feature.has-shot h3{line-height:1.2}@media (max-width:900px){.feature.has-shot{min-height:340px}.f-shot{right:5%}.f-shot .phone{--pw:188px}}@media (max-width:600px){.feature.has-shot{min-height:0}.f-shot{display:none}.feature.has-shot h3,.feature.has-shot p{max-width:none}}.family a{--c:var(--accent)}.family a:not([aria-disabled]):hover{background:radial-gradient(120% 90% at 50% 0%,color-mix(in oklab,var(--c) 20%,transparent),transparent 72%),var(--surface)}.family img{box-shadow:0 0 0 1px rgba(255,255,255,.16),0 10px 22px -12px color-mix(in oklab,var(--c) 90%,transparent)}@media (prefers-reduced-motion:no-preference){.family img{transition:transform .2s}.family a:not([aria-disabled]):hover img{transform:translateY(-2px) scale(1.06)}}.endc{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:18px 30px;align-items:center;padding:34px 38px;border-radius:calc(var(--radius) * 1.5);border:1px solid color-mix(in oklab,var(--accent) 30%,var(--border));background:radial-gradient(60% 130% at 100% 0%,color-mix(in oklab,var(--accent) 20%,transparent),transparent 62%),radial-gradient(45% 100% at 0% 100%,color-mix(in oklab,var(--accent) 9%,transparent),transparent 70%),var(--surface);box-shadow:0 60px 120px -76px color-mix(in oklab,var(--accent) 80%,transparent),var(--shadow)}.endc-ic{display:block;width:72px;height:72px;border-radius:18px;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 18px 40px -14px color-mix(in oklab,var(--accent) 80%,transparent)}.endc h2{font-size:clamp(23px,2.5vw,31px);max-width:none}.endc .lead{margin-top:8px;font-size:15.5px;max-width:560px}.endc-cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}@media (max-width:900px){.endc{grid-template-columns:1fr;justify-items:center;text-align:center;padding:30px 22px}.endc .lead{margin-inline:auto}.endc-cta{justify-content:center}}@media (max-width:700px){.endc-cta{width:100%}.endc-cta .btn{flex:1 1 100%;justify-content:center}.endc-ic{width:60px;height:60px;border-radius:15px}}footer{padding:44px 0 40px;background:linear-gradient(180deg,color-mix(in oklab,var(--bg) 82%,#000),color-mix(in oklab,var(--bg) 64%,#000))}footer .note{margin-bottom:28px}footer .wrap.foot{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:30px 56px;align-items:start;justify-content:stretch}footer .wrap.foot.rat{grid-template-columns:minmax(0,1fr) minmax(0,1.5fr) auto}.foot-brand .brand{font-size:16px}.foot-brand p{margin-top:12px;font-size:13.5px;line-height:1.55;max-width:300px}footer .foot-col{display:block}.foot-col .fh{font-size:12px;font-weight:650;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin-bottom:10px}.foot-col a{display:block;padding:4px 0;line-height:1.45}.foot-col.rg .links{columns:2;column-gap:32px}.foot-col.rg .links a{break-inside:avoid}@media (max-width:860px){footer .wrap.foot,footer .wrap.foot.rat{grid-template-columns:minmax(0,1fr) auto}.foot-brand,.foot-col.rg{grid-column:1 / -1}}@media (max-width:480px){footer .wrap.foot,footer .wrap.foot.rat{grid-template-columns:1fr}.foot-col.rg .links{column-gap:20px}footer{padding-top:36px}}@supports (interpolate-size:allow-keywords) and selector(::details-content){@media (prefers-reduced-motion:no-preference){.faq details{interpolate-size:allow-keywords}.faq details::details-content{height:0;overflow:clip;transition:height .32s cubic-bezier(.2,.7,.2,1),content-visibility .32s allow-discrete}.faq details[open]::details-content{height:auto}}}@media (prefers-reduced-motion:no-preference){.features .feature.rv:nth-child(3n+2),.plans .plan.rv:nth-child(2){transition-delay:.09s}.features .feature.rv:nth-child(3n),.plans .plan.rv:nth-child(3){transition-delay:.18s}}@supports (animation-timeline:view()){@media (prefers-reduced-motion:no-preference){.hero>.stage,.hero>.wall{animation:par-bg linear both;animation-timeline:scroll(root);animation-range:0 100vh}.hero .shots,.hero .row-phones{animation:par-fg linear both;animation-timeline:scroll(root);animation-range:0 100vh}.steps li{animation:step-in linear both;animation-timeline:view();animation-range:entry 0% cover 32%}.flow .phone{animation:flow-phone linear both;animation-timeline:view();animation-range:entry 0% cover 45%}.f-shot{animation:f-shot linear both;animation-timeline:view();animation-range:cover 0% cover 100%}}}@keyframes par-bg{to{translate:0 16vh}}@keyframes par-fg{to{translate:0 -5vh}}@keyframes step-in{from{opacity:.15;translate:0 28px}}@keyframes flow-phone{from{opacity:.3;translate:0 70px;rotate:5deg;scale:.94}}@keyframes f-shot{from{translate:0 70px}to{translate:0 -30px}}.not-suite{display:flex;gap:12px;align-items:flex-start;margin-top:22px;padding:16px 18px;border-radius:14px;font-size:15px;line-height:1.5;border:1px dashed color-mix(in oklab,var(--ink) 35%,transparent);color:var(--muted)}.not-suite b{color:var(--ink)}.not-suite .i{flex:none;width:20px;height:20px;margin-top:1px;color:var(--ink)}
   </style>
   <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -457,7 +79,7 @@
           <ul class="rules show-points">
             <li><span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg></span><span><b>Ein Link, eine Arbeit</b>Der Link gilt 7 Tage und für genau einen Eintrag. Der Betrieb sieht nur den Namen deines Hauses.</span></li>
             <li><span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m9 12 2 2 4-4" /></svg></span><span><b>Mit Siegel</b>Einträge vom Handwerker sind als solche markiert und lassen sich nicht nachträglich umschreiben. Das zählt beim Hausverkauf.</span></li>
-            <li><span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg></span><span><b>InstallateurDex-Betriebe</b>Nutzt dein Installateur InstallateurDex, kommen Heizung, Wärmepumpe und jede Wartung automatisch in deine Akte.</span></li>
+            <li><span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg></span><span><b>InstallateurDex-Betriebe</b>Nutzt dein Installateur InstallateurDex und gibt das Kundenportal frei, holst du Heizung, Wärmepumpe und jede Wartung mit einem Tipp in deine Akte.</span></li>
           </ul>
         </div>
       </div>
@@ -472,7 +94,7 @@
         </div>
         <ul class="rules rv">
           <li><span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12" /><path d="M4 14h9" /><path d="M19 6a7.7 7.7 0 0 0-5.2-2A7.9 7.9 0 0 0 6 12c0 4.4 3.5 8 7.8 8 2 0 3.8-.8 5.2-2" /></svg></span><span><b>Steuer (Deutschland)</b>20 % der Arbeitskosten von Handwerkern, bis zu 1.200 € Ermäßigung im Jahr (§&nbsp;35a EStG), wenn Rechnung und Überweisung auffindbar sind.</span></li>
-          <li><span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><span><b>Gewährleistung</b>Am Bauwerk in Deutschland meist 5 Jahre (§ 634a BGB), in Österreich 3 Jahre (§ 933 ABGB). HausDex erinnert, bevor die Frist abläuft.</span></li>
+          <li><span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><span><b>Gewährleistung</b>Am Bauwerk in Deutschland meist 5 Jahre (§ 634a BGB), in Österreich 3 Jahre (§ 933 ABGB). HausDex erinnert 60 Tage vor Ablauf, sobald das Enddatum in der Akte steht.</span></li>
           <li><span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg></span><span><b>Hausverkauf, Bank, Erbe</b>Eine lückenlose Wartungs- und Rechnungshistorie beantwortet die Fragen von Käufern, Gutachtern und Bank, bevor sie gestellt werden.</span></li>
         </ul>
       </div>
@@ -486,7 +108,7 @@
           <p class="lead">Von der Heizung bis zur PV-Anlage: HausDex kennt typische Lebensdauern, Wartungen und Pflichttermine für Deutschland, Österreich und die Schweiz.</p>
         </div>
         <div class="features">
-          <article class="feature rv"><span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><path d="M7 12h10" /></svg></span><h3>Rechnung per KI, Kosten & Steuer</h3><p>Foto oder PDF: Firma, Datum, Betrag, Lohnanteil und Garantie werden ausgelesen und der richtigen Anlage zugeordnet. Ausgaben nach Jahr und Bereich, in Deutschland mit Ermäßigung nach §&nbsp;35a EStG als PDF und CSV.</p></article>
+          <article class="feature rv"><span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><path d="M7 12h10" /></svg></span><h3>Rechnung per KI, Kosten & Steuer</h3><p>Foto oder PDF: Firma, Datum, Betrag, Lohnanteil und Garantie (wenn auf der Rechnung genannt) werden ausgelesen und der richtigen Anlage zugeordnet. Ausgaben nach Jahr und Bereich, in Deutschland mit Ermäßigung nach §&nbsp;35a EStG als PDF und CSV.</p></article>
           <article class="feature rv"><span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" /><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" /></svg></span><h3>Wartung und Lebensdauer</h3><p>Heizungswartung, Rauchmelder, Kaminkehrer, Wasserfilter: Erinnerung 7 Tage vorher, Garantie-Ende 60 Tage vorher, Kalender-Export. Die Lebensdauer-Uhr zeigt, wann Heizung, PV oder Wallbox dran sind, dazu der Rücklagen-Rechner.</p></article>
           <article class="feature rv"><span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /><path d="M14 2v4a2 2 0 0 0 2 2h4" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></svg></span><h3>Hauspass und Notfall-Karte</h3><p>Steckbrief, Anlagen, Chronik, Wartungsplan und Verbrauch als PDF für Verkauf, Bank, Versicherung oder die Erben. Die Notfall-Karte mit Haupthahn, Sicherungskasten, Gas-Ventil und Notrufnummern teilst du mit Babysitter, Mieter oder Nachbarn.</p></article>
         </div>
@@ -500,7 +122,7 @@
       <div class="wrap flow">
         <div class="rv">
           <p class="eyebrow">So funktioniert's</p>
-          <h2>In drei Schritten startklar</h2>
+          <h2>So entsteht deine Hausakte</h2>
           <ol class="steps">
             <li><b>Haus einrichten</b><p>Art, Baujahr, Heizung und mehr in zwei Minuten. HausDex legt die Anlagen an und plant alle Wartungen.</p></li>
             <li><b>Rechnungen ablegen</b><p>Handwerker-Rechnungen fotografieren oder als PDF wählen. Die KI füllt die Felder aus, du bestätigst.</p></li>
@@ -515,7 +137,7 @@
       <div class="wrap">
         <div class="head rv">
           <p class="eyebrow">Preise</p>
-          <h2>Kostenlos starten, bei Bedarf upgraden.</h2>
+          <h2>Gratis für 1 Objekt und 25 Einträge</h2>
         </div>
         <div class="plans two">
           <div class="plan rv">
@@ -544,15 +166,30 @@
       <div class="wrap faq">
         <div class="rv">
           <p class="eyebrow">FAQ</p>
-          <h2>Häufige Fragen</h2>
+          <h2>Fragen zur Hausakte</h2>
           <p class="ask"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg><span>Noch etwas offen? <a href="mailto:support@dexware.app?subject=HausDex">support@dexware.app</a></span></p>
         </div>
         <div class="rv">
-          <details><summary>Brauche ich ein Konto?<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></summary><div class="a">Nein, zum Ausprobieren nicht: „Ohne Konto ausprobieren“ speichert alles nur auf dem Handy. Mit Konto werden deine Daten gesichert, zwischen Geräten abgeglichen und mit der Familie geteilt (Teilen mit Pro). Die Daten aus dem Ausprobieren übernimmst du dabei.</div></details>
+          <details><summary>Brauche ich ein Konto?<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></summary><div class="a">Nein, zum Ausprobieren nicht: „Ohne Konto ausprobieren“ speichert alles nur auf dem Handy. Mit Konto werden deine Daten gesichert, zwischen Geräten abgeglichen und mit der Familie geteilt (Teilen mit Pro). Die Daten aus dem Ausprobieren übernimmst du dabei. KI-Auslese und Handwerker-Link brauchen ein Konto, ohne Konto siehst du eine Beispiel-Auslese.</div></details>
           <details><summary>Was sieht der Handwerker über den Link?<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></summary><div class="a">Nur den Namen deines Objekts und ein Formular für seine Arbeit. Deine Akte, andere Einträge oder Belege sieht er nicht. Der Link gilt 7 Tage und für einen einzigen Eintrag.</div></details>
           <details><summary>Wie funktioniert die KI-Auslese?<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></summary><div class="a">Du fotografierst eine Rechnung oder wählst ein PDF. Die Datei geht verschlüsselt an unseren Server und von dort zur Auslese an Anthropic (USA); gespeichert wird sie dort nicht, nur das Ergebnis kommt zurück. Details in der <a href="datenschutz.html">Datenschutzerklärung</a>.</div></details>
           <details><summary>Ersetzt HausDex den Steuerberater?<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></summary><div class="a">Nein. Der Steuer-Helfer fasst deine Rechnungen zusammen und rechnet die Ermäßigung nach § 35a EStG überschlägig — eine Hilfe für die Steuererklärung, keine Beratung.</div></details>
           <details><summary>Funktioniert HausDex ohne Netz?<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></summary><div class="a">Ja. Alles liegt auch auf dem Handy und wird abgeglichen, sobald wieder Netz da ist — praktisch im Keller oder auf dem Dachboden.</div></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="loslegen">
+      <div class="wrap">
+        <div class="endc rv">
+          <img class="endc-ic" src="assets/apps/hausdex.webp" alt="" width="72" height="72" loading="lazy" />
+          <div>
+            <h2>HausDex kommt bald zu Google Play.</h2>
+            <p class="lead">Gratis: 1 Objekt, 25 Einträge — für immer. Wir sagen dir Bescheid, sobald die App da ist.</p>
+          </div>
+          <div class="endc-cta">
+            <a class="btn" href="mailto:support@dexware.app?subject=HausDex%20%E2%80%93%20bitte%20Bescheid%20geben%2C%20sobald%20verf%C3%BCgbar"><svg class="play" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 6 3.5z"/></svg>Bescheid geben, sobald verfügbar</a>
+          </div>
         </div>
       </div>
     </section>
@@ -564,7 +201,7 @@
           <div>
             <p class="eyebrow">Für Handwerker</p>
             <h2>Du bist Installateur oder Heizungsbauer?</h2>
-            <p class="lead">Mit InstallateurDex diktierst du Wartungen, schreibst Rechnungen und gibst jedem Kunden einen QR-Anlagenpass. Nutzt dein Kunde HausDex, landet jede Arbeit automatisch in seiner Hausakte, mit deinem Namen, wenn wieder etwas anfällt.</p>
+            <p class="lead">Mit InstallateurDex diktierst du Wartungen, schreibst mit Pro Rechnungen und gibst jedem Kunden einen QR-Anlagenpass. Schaltest du das Kundenportal frei, holt sich dein Kunde mit HausDex jede Arbeit mit einem Tipp in seine Hausakte, mit deinem Namen, wenn wieder etwas anfällt.</p>
           </div>
           <a href="https://installateurdex.dexware.app" class="btn">InstallateurDex ansehen <svg class="i sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
         </div>
@@ -573,9 +210,12 @@
   </main>
 
   <footer>
-    <div class="wrap">
-      <span>© 2026 HausDex · ein Produkt von <a href="https://dexware.app/">Dexware</a></span>
-      <nav aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="agb.html">AGB</a><a href="datenschutz.html">Datenschutz</a><a href="konto-loeschung.html">Konto löschen</a><a href="mailto:support@dexware.app?subject=HausDex%20Support">Support</a></nav>
+    <div class="wrap foot">
+      <div class="foot-brand">
+        <a class="brand" href="/" aria-label="HausDex Startseite"><img src="assets/apps/hausdex.webp" alt="" width="32" height="32" loading="lazy" /><span class="wm">Haus<span>Dex</span></span></a>
+        <p>© 2026 HausDex · ein Produkt von <a href="https://dexware.app/">Dexware</a></p>
+      </div>
+      <nav class="foot-col" aria-label="Rechtliches"><p class="fh">Rechtliches</p><a href="impressum.html">Impressum</a><a href="agb.html">AGB</a><a href="datenschutz.html">Datenschutz</a><a href="konto-loeschung.html">Konto löschen</a><a href="mailto:support@dexware.app?subject=HausDex%20Support">Support</a></nav>
     </div>
   </footer>
 
